@@ -15,6 +15,7 @@
 		E981B3AC237F6D65006434DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E981B3AA237F6D65006434DF /* LaunchScreen.storyboard */; };
 		E981B3B4237F6E74006434DF /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3B3237F6E74006434DF /* SignUp.swift */; };
 		E981B3B6237F6F96006434DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3B5237F6F96006434DF /* LoginViewController.swift */; };
+		E981B3B8237F6FE0006434DF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3B7237F6FE0006434DF /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E981B3AD237F6D65006434DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E981B3B3237F6E74006434DF /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		E981B3B5237F6F96006434DF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E981B3B7237F6FE0006434DF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				E981B3AD237F6D65006434DF /* Info.plist */,
 				E981B3B3237F6E74006434DF /* SignUp.swift */,
 				E981B3B5237F6F96006434DF /* LoginViewController.swift */,
+				E981B3B7237F6FE0006434DF /* SignUpViewController.swift */,
 			);
 			path = Group3_F2019_MAD3115_FP;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E981B3B8237F6FE0006434DF /* SignUpViewController.swift in Sources */,
 				E981B3A4237F6D64006434DF /* ViewController.swift in Sources */,
 				E981B3B4237F6E74006434DF /* SignUp.swift in Sources */,
 				E981B3A0237F6D64006434DF /* AppDelegate.swift in Sources */,
