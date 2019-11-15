@@ -22,6 +22,15 @@
 		E981B3C0237F7083006434DF /* EditEmployeeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3BF237F7083006434DF /* EditEmployeeProfileViewController.swift */; };
 		E981B3C2237F70A4006434DF /* DisplayEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3C1237F70A4006434DF /* DisplayEmployeeViewController.swift */; };
 		E981B3C6237F7165006434DF /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3C5237F7165006434DF /* Employee.swift */; };
+		E981B3C8237F71BA006434DF /* IPrintable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3C7237F71BA006434DF /* IPrintable.swift */; };
+		E981B3CA237F71C9006434DF /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3C9237F71C9006434DF /* Vehicle.swift */; };
+		E981B3CC237F71D7006434DF /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3CB237F71D7006434DF /* Car.swift */; };
+		E981B3CE237F71E8006434DF /* MotorCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3CD237F71E8006434DF /* MotorCycle.swift */; };
+		E981B3D0237F71F5006434DF /* PartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3CF237F71F5006434DF /* PartTime.swift */; };
+		E981B3D2237F7200006434DF /* Intern.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3D1237F7200006434DF /* Intern.swift */; };
+		E981B3D4237F7213006434DF /* FullTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3D3237F7213006434DF /* FullTime.swift */; };
+		E981B3D6237F722C006434DF /* CommissionBasedPartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3D5237F722C006434DF /* CommissionBasedPartTime.swift */; };
+		E981B3D8237F7240006434DF /* FixedBasedPartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3D7237F7240006434DF /* FixedBasedPartTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +51,15 @@
 		E981B3BF237F7083006434DF /* EditEmployeeProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmployeeProfileViewController.swift; sourceTree = "<group>"; };
 		E981B3C1237F70A4006434DF /* DisplayEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayEmployeeViewController.swift; sourceTree = "<group>"; };
 		E981B3C5237F7165006434DF /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		E981B3C7237F71BA006434DF /* IPrintable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPrintable.swift; sourceTree = "<group>"; };
+		E981B3C9237F71C9006434DF /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		E981B3CB237F71D7006434DF /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		E981B3CD237F71E8006434DF /* MotorCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotorCycle.swift; sourceTree = "<group>"; };
+		E981B3CF237F71F5006434DF /* PartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartTime.swift; sourceTree = "<group>"; };
+		E981B3D1237F7200006434DF /* Intern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intern.swift; sourceTree = "<group>"; };
+		E981B3D3237F7213006434DF /* FullTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullTime.swift; sourceTree = "<group>"; };
+		E981B3D5237F722C006434DF /* CommissionBasedPartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommissionBasedPartTime.swift; sourceTree = "<group>"; };
+		E981B3D7237F7240006434DF /* FixedBasedPartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedBasedPartTime.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +124,15 @@
 			isa = PBXGroup;
 			children = (
 				E981B3C5237F7165006434DF /* Employee.swift */,
+				E981B3C7237F71BA006434DF /* IPrintable.swift */,
+				E981B3C9237F71C9006434DF /* Vehicle.swift */,
+				E981B3CB237F71D7006434DF /* Car.swift */,
+				E981B3CD237F71E8006434DF /* MotorCycle.swift */,
+				E981B3CF237F71F5006434DF /* PartTime.swift */,
+				E981B3D1237F7200006434DF /* Intern.swift */,
+				E981B3D3237F7213006434DF /* FullTime.swift */,
+				E981B3D5237F722C006434DF /* CommissionBasedPartTime.swift */,
+				E981B3D7237F7240006434DF /* FixedBasedPartTime.swift */,
 			);
 			path = "Swift Files";
 			sourceTree = "<group>";
@@ -182,16 +209,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				E981B3B8237F6FE0006434DF /* SignUpViewController.swift in Sources */,
+				E981B3D2237F7200006434DF /* Intern.swift in Sources */,
+				E981B3D0237F71F5006434DF /* PartTime.swift in Sources */,
 				E981B3C6237F7165006434DF /* Employee.swift in Sources */,
+				E981B3D8237F7240006434DF /* FixedBasedPartTime.swift in Sources */,
+				E981B3CC237F71D7006434DF /* Car.swift in Sources */,
 				E981B3A4237F6D64006434DF /* ViewController.swift in Sources */,
+				E981B3D6237F722C006434DF /* CommissionBasedPartTime.swift in Sources */,
 				E981B3BA237F7011006434DF /* SplashScreenViewController.swift in Sources */,
+				E981B3CA237F71C9006434DF /* Vehicle.swift in Sources */,
 				E981B3C2237F70A4006434DF /* DisplayEmployeeViewController.swift in Sources */,
 				E981B3BC237F7033006434DF /* HomeViewController.swift in Sources */,
 				E981B3C0237F7083006434DF /* EditEmployeeProfileViewController.swift in Sources */,
 				E981B3B4237F6E74006434DF /* SignUp.swift in Sources */,
 				E981B3A0237F6D64006434DF /* AppDelegate.swift in Sources */,
 				E981B3BE237F705B006434DF /* AddEmployeeViewController.swift in Sources */,
+				E981B3CE237F71E8006434DF /* MotorCycle.swift in Sources */,
 				E981B3B6237F6F96006434DF /* LoginViewController.swift in Sources */,
+				E981B3D4237F7213006434DF /* FullTime.swift in Sources */,
+				E981B3C8237F71BA006434DF /* IPrintable.swift in Sources */,
 				E981B3A2237F6D64006434DF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
