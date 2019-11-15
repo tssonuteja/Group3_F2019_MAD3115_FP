@@ -19,6 +19,7 @@
 		E981B3BA237F7011006434DF /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3B9237F7011006434DF /* SplashScreenViewController.swift */; };
 		E981B3BC237F7033006434DF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3BB237F7033006434DF /* HomeViewController.swift */; };
 		E981B3BE237F705B006434DF /* AddEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3BD237F705B006434DF /* AddEmployeeViewController.swift */; };
+		E981B3C0237F7083006434DF /* EditEmployeeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3BF237F7083006434DF /* EditEmployeeProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E981B3B9237F7011006434DF /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		E981B3BB237F7033006434DF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E981B3BD237F705B006434DF /* AddEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeViewController.swift; sourceTree = "<group>"; };
+		E981B3BF237F7083006434DF /* EditEmployeeProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmployeeProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				E981B3B9237F7011006434DF /* SplashScreenViewController.swift */,
 				E981B3BB237F7033006434DF /* HomeViewController.swift */,
 				E981B3BD237F705B006434DF /* AddEmployeeViewController.swift */,
+				E981B3BF237F7083006434DF /* EditEmployeeProfileViewController.swift */,
 			);
 			path = Group3_F2019_MAD3115_FP;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				E981B3A4237F6D64006434DF /* ViewController.swift in Sources */,
 				E981B3BA237F7011006434DF /* SplashScreenViewController.swift in Sources */,
 				E981B3BC237F7033006434DF /* HomeViewController.swift in Sources */,
+				E981B3C0237F7083006434DF /* EditEmployeeProfileViewController.swift in Sources */,
 				E981B3B4237F6E74006434DF /* SignUp.swift in Sources */,
 				E981B3A0237F6D64006434DF /* AppDelegate.swift in Sources */,
 				E981B3BE237F705B006434DF /* AddEmployeeViewController.swift in Sources */,
