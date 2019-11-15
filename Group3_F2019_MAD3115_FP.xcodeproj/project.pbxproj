@@ -14,6 +14,7 @@
 		E981B3A9237F6D65006434DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E981B3A8237F6D65006434DF /* Assets.xcassets */; };
 		E981B3AC237F6D65006434DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E981B3AA237F6D65006434DF /* LaunchScreen.storyboard */; };
 		E981B3B4237F6E74006434DF /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3B3237F6E74006434DF /* SignUp.swift */; };
+		E981B3B6237F6F96006434DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3B5237F6F96006434DF /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E981B3AB237F6D65006434DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E981B3AD237F6D65006434DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E981B3B3237F6E74006434DF /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
+		E981B3B5237F6F96006434DF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				E981B3AA237F6D65006434DF /* LaunchScreen.storyboard */,
 				E981B3AD237F6D65006434DF /* Info.plist */,
 				E981B3B3237F6E74006434DF /* SignUp.swift */,
+				E981B3B5237F6F96006434DF /* LoginViewController.swift */,
 			);
 			path = Group3_F2019_MAD3115_FP;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				E981B3A4237F6D64006434DF /* ViewController.swift in Sources */,
 				E981B3B4237F6E74006434DF /* SignUp.swift in Sources */,
 				E981B3A0237F6D64006434DF /* AppDelegate.swift in Sources */,
+				E981B3B6237F6F96006434DF /* LoginViewController.swift in Sources */,
 				E981B3A2237F6D64006434DF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
