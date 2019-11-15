@@ -16,6 +16,7 @@
 		E981B3B4237F6E74006434DF /* SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3B3237F6E74006434DF /* SignUp.swift */; };
 		E981B3B6237F6F96006434DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3B5237F6F96006434DF /* LoginViewController.swift */; };
 		E981B3B8237F6FE0006434DF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3B7237F6FE0006434DF /* SignUpViewController.swift */; };
+		E981B3BA237F7011006434DF /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3B9237F7011006434DF /* SplashScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E981B3B3237F6E74006434DF /* SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUp.swift; sourceTree = "<group>"; };
 		E981B3B5237F6F96006434DF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E981B3B7237F6FE0006434DF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E981B3B9237F7011006434DF /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				E981B3B3237F6E74006434DF /* SignUp.swift */,
 				E981B3B5237F6F96006434DF /* LoginViewController.swift */,
 				E981B3B7237F6FE0006434DF /* SignUpViewController.swift */,
+				E981B3B9237F7011006434DF /* SplashScreenViewController.swift */,
 			);
 			path = Group3_F2019_MAD3115_FP;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			files = (
 				E981B3B8237F6FE0006434DF /* SignUpViewController.swift in Sources */,
 				E981B3A4237F6D64006434DF /* ViewController.swift in Sources */,
+				E981B3BA237F7011006434DF /* SplashScreenViewController.swift in Sources */,
 				E981B3B4237F6E74006434DF /* SignUp.swift in Sources */,
 				E981B3A0237F6D64006434DF /* AppDelegate.swift in Sources */,
 				E981B3B6237F6F96006434DF /* LoginViewController.swift in Sources */,
