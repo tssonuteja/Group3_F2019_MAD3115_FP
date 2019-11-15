@@ -21,6 +21,7 @@
 		E981B3BE237F705B006434DF /* AddEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3BD237F705B006434DF /* AddEmployeeViewController.swift */; };
 		E981B3C0237F7083006434DF /* EditEmployeeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3BF237F7083006434DF /* EditEmployeeProfileViewController.swift */; };
 		E981B3C2237F70A4006434DF /* DisplayEmployeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3C1237F70A4006434DF /* DisplayEmployeeViewController.swift */; };
+		E981B3C6237F7165006434DF /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3C5237F7165006434DF /* Employee.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		E981B3BD237F705B006434DF /* AddEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeeViewController.swift; sourceTree = "<group>"; };
 		E981B3BF237F7083006434DF /* EditEmployeeProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmployeeProfileViewController.swift; sourceTree = "<group>"; };
 		E981B3C1237F70A4006434DF /* DisplayEmployeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayEmployeeViewController.swift; sourceTree = "<group>"; };
+		E981B3C5237F7165006434DF /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,8 @@
 		E981B39E237F6D64006434DF /* Group3_F2019_MAD3115_FP */ = {
 			isa = PBXGroup;
 			children = (
+				E981B3C4237F7123006434DF /* Swift Files */,
+				E981B3C3237F70F3006434DF /* View Controllers */,
 				E981B39F237F6D64006434DF /* AppDelegate.swift */,
 				E981B3A1237F6D64006434DF /* SceneDelegate.swift */,
 				E981B3A3237F6D64006434DF /* ViewController.swift */,
@@ -80,6 +84,13 @@
 				E981B3AA237F6D65006434DF /* LaunchScreen.storyboard */,
 				E981B3AD237F6D65006434DF /* Info.plist */,
 				E981B3B3237F6E74006434DF /* SignUp.swift */,
+			);
+			path = Group3_F2019_MAD3115_FP;
+			sourceTree = "<group>";
+		};
+		E981B3C3237F70F3006434DF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				E981B3B5237F6F96006434DF /* LoginViewController.swift */,
 				E981B3B7237F6FE0006434DF /* SignUpViewController.swift */,
 				E981B3B9237F7011006434DF /* SplashScreenViewController.swift */,
@@ -88,7 +99,15 @@
 				E981B3BF237F7083006434DF /* EditEmployeeProfileViewController.swift */,
 				E981B3C1237F70A4006434DF /* DisplayEmployeeViewController.swift */,
 			);
-			path = Group3_F2019_MAD3115_FP;
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E981B3C4237F7123006434DF /* Swift Files */ = {
+			isa = PBXGroup;
+			children = (
+				E981B3C5237F7165006434DF /* Employee.swift */,
+			);
+			path = "Swift Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E981B3B8237F6FE0006434DF /* SignUpViewController.swift in Sources */,
+				E981B3C6237F7165006434DF /* Employee.swift in Sources */,
 				E981B3A4237F6D64006434DF /* ViewController.swift in Sources */,
 				E981B3BA237F7011006434DF /* SplashScreenViewController.swift in Sources */,
 				E981B3C2237F70A4006434DF /* DisplayEmployeeViewController.swift in Sources */,
