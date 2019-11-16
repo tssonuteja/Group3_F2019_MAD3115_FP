@@ -10,6 +10,9 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
+    var db: OpaquePointer?
+    var SignUpArray: [SignUp] = [SignUp]()
+    
     
     @IBOutlet weak var txtName: UITextField!
     
@@ -23,6 +26,15 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        readValues()
+               let fileUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("SignUpDatabase.sqlite")
+               
+               if sqlite3_open(fileUrl.path, &db) != SQLITE_OK{
+                   self.title = "hello mohit"
+                   print("error opening meassage")
+                   return
+               }
         //test
 
         
