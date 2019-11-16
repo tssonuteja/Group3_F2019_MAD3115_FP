@@ -69,6 +69,20 @@ class SignUpViewController: UIViewController {
         
     }
     
+    if (password != cnfPassword) {
+               let myAlert = UIAlertController(title: "Alert", message: "password do not match", preferredStyle: UIAlertControllerStyle.alert)
+               let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default, handler: nil)
+               myAlert.addAction(okAction)
+               self.present(myAlert,animated: true, completion: nil); return
+           }
+    
+    var stmt: OpaquePointer?
+    let insertQuery = "INSERT INTO Signup (name, email, password, cnfpassword) VALUES(?,?,?,?)"
+    if sqlite3_prepare(db, insertQuery, -1, &stmt, nil) != SQLITE_OK{
+         print("error bindind Query")
+         return
+         }
+    
     
     
     @IBAction func btnGoToLoginScreen(_ sender: Any) {
