@@ -13,3 +13,10 @@ let date = Date()
 let calendar = Calendar.current
 let currentYear = calendar.component(.year, from: date)
 
+class Employee: IPrintable {
+
+ var employeeName: String?
+ var type: String?
+ var age: Int?
+ var vehicle: Vehicle?
+ var employeeId: Int?
