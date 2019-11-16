@@ -13,7 +13,7 @@ class SignUpViewController: UIViewController {
     
     var db: OpaquePointer?
     var SignUpArray: [SignUp] = [SignUp]()
-    
+    //ests
     
     @IBOutlet weak var txtName: UITextField!
     
