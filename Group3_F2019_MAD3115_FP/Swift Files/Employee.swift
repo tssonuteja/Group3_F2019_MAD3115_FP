@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+
+let date = Date()
+let calendar = Calendar.current
+let currentYear = calendar.component(.year, from: date)
+
