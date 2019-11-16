@@ -43,7 +43,7 @@ class LoginViewController: UIViewController {
              print("array works")
              print("\(SignUpArray[j].id)")
              print("\(SignUpArray.count)")
-             print("\(txtEmail.text!)")
+             print("\(txtEmailID.text!)")
              print("\(txtPassword.text!)")
              print("\(SignUpArray[j].empPassword)")
              print("\(SignUpArray[j].empEmailId)")
