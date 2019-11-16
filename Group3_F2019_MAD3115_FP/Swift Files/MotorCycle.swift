@@ -7,3 +7,16 @@
 //
 
 import Foundation
+class Motorcycle: Vehicle
+{
+    var getKerbWeight: Int?
+    
+    
+    
+    override func printMyData()
+    {
+        print("Employee Has a Motorcycle")
+        super.printMyData()
+        print("Weight of MotorCycle is = \(getKerbWeight!)")
+    }
+}
