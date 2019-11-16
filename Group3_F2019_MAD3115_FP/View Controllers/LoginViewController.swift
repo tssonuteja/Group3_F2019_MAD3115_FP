@@ -11,6 +11,9 @@ import UIKit
 class LoginViewController: UIViewController {
     
     
+    var SignUpArray: [SignUp] = [SignUp]()
+    
+    
     @IBOutlet weak var txtEmailID: UITextField!
     
     
@@ -18,6 +21,10 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("what's in the array?")
+               print(self.registerArray)
+               print("------")
 // test
        
     }
