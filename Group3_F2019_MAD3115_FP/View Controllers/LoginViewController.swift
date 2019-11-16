@@ -54,6 +54,16 @@ class LoginViewController: UIViewController {
             
         }
         
+        if (txtPassword.text! != SignUpArray[SignUpArray.count-1].empPassword ){
+                    print("User Email/Password incorrect")
+            let myAlert = UIAlertController(title: "Alert", message: "Invalid Email/ Password !!", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+                    myAlert.addAction(okAction)
+                    self.present(myAlert,animated: true, completion: nil)
+                    }
+                
+            }
+        
         
     }
     
