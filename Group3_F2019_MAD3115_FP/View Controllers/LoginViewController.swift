@@ -9,11 +9,26 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var txtEmailID: UITextField!
+    
+    
+    @IBOutlet weak var txtPassword: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 // test
        
+    }
+    
+    
+    
+    @IBAction func btnLogin(_ sender: Any) {
+    }
+    
+    
+    @IBAction func btnSignUp(_ sender: Any) {
     }
     
 
