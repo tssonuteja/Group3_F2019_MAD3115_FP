@@ -243,6 +243,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Sign Up!"/>
+                                <connections>
+                                    <action selector="btnSignUp:" destination="rYv-je-1wX" eventType="touchUpInside" id="2CO-2G-dt5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jq5-tz-W9T">
                                 <rect key="frame" x="96" y="817" width="222" height="45"/>
@@ -251,6 +254,9 @@
                                 <state key="normal" title="Click here to Login!">
                                     <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnGoToLoginScreen:" destination="rYv-je-1wX" eventType="touchUpInside" id="lCR-WQ-QNN"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpM-Lt-46x">
                                 <rect key="frame" x="163" y="607" width="42" height="21"/>
@@ -277,6 +283,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UO8-Wp-hzH"/>
                     </view>
+                    <connections>
+                        <outlet property="regEmailID" destination="0tc-Uz-oBx" id="LvI-Yt-8Kd"/>
+                        <outlet property="txtName" destination="yg6-fQ-ZDQ" id="Hou-Pq-9NY"/>
+                        <outlet property="txtSuCPassword" destination="gDQ-hC-Mh6" id="g67-oH-dLF"/>
+                        <outlet property="txtSuPassword" destination="VwM-x5-LEn" id="sEX-XL-1d2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Xc-it-yAT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
