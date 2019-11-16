@@ -7,3 +7,25 @@
 //
 
 import Foundation
+class Intern: Employee  {
+    var internSchoolName: String?
+    var stipend: Int?
+   
+    
+    
+    
+    func calcEarning() -> Int {
+        return stipend!
+    }
+    
+    override func  printMyData() {
+        super.printMyData()
+        print("Employee is Intern Type")
+        print("Intern School name is \(internSchoolName!)")
+        print("Intern total salary is \(stipend!)")
+        
+        
+    }
+    
+    
+}
