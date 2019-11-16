@@ -71,7 +71,7 @@ class LoginViewController: UIViewController {
     @IBAction func btnSignUp(_ sender: Any) {
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let registerViewControlle = storyboard?.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpViewController
+        let SignUpViewController = storyboard?.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpViewController
         self.present(SignUpViewController, animated: true, completion: nil)
         }
     }
