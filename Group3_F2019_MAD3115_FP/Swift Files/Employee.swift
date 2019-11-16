@@ -20,3 +20,17 @@ class Employee: IPrintable {
  var age: Int?
  var vehicle: Vehicle?
  var employeeId: Int?
+
+
+ 
+    func calBirthYear() -> Int {
+        return currentYear - age!
+    }
+    
+    func printMyData() {
+        print("Name of Employee is = \(employeeName!) \nYear of Birth of Employee = \(calBirthYear()) \nEmployee Id is =  \(employeeId!) ")
+        
+    }
+    
+    
+}
