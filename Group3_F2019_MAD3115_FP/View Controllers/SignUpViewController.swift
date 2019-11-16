@@ -56,6 +56,17 @@ class SignUpViewController: UIViewController {
     
     
     @IBAction func btnSignUp(_ sender: Any) {
+        let name = txtName.text
+        let email = regEmailID.text
+         let password = txtSuPassword.text
+         let cnfPassword = txtSuCPassword.text
+        if (name?.isEmpty)! || (email?.isEmpty)! || (password?.isEmpty)!  || (cnfPassword?.isEmpty)! {
+            let myAlert = UIAlertController(title: "Alert", message: "all fields are required", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+                   myAlert.addAction(okAction)
+             self.present(myAlert,animated: true, completion: nil); return
+        }
+        
     }
     
     
