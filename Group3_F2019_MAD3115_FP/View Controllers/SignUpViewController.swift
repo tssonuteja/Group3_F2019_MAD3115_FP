@@ -35,10 +35,24 @@ class SignUpViewController: UIViewController {
                    print("error opening meassage")
                    return
                }
+        
+        
+        
+              if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS Signup (id INTEGER PRIMARY KEY AUTOINCREMENT,name TEXT, email TEXT, password TEXT, cnfpassword TEXT )", nil,nil,nil) != SQLITE_OK{
+                  print("error createing table ")
+                  return
+              }
         //test
 
-        
-    }
+        print("good")
+               readValues()
+           }
+    
+    override func didReceiveMemoryWarning() {
+           super.didReceiveMemoryWarning()
+        }
+       
+    
     
     
     @IBAction func btnSignUp(_ sender: Any) {
