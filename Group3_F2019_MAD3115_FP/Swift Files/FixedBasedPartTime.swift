@@ -7,3 +7,26 @@
 //
 
 import Foundation
+class FixedBasePartTime: PartTime {
+    var fixedAmount: Int?
+    
+    override init() {
+        
+    }
+    
+    
+    func calcEarning() -> Int {
+        
+        return (rate!*numberOfHoursWorked!) + (fixedAmount!)
+    }
+    
+    override func printMyData() {
+        
+        super.printMydata()
+        print("Employee is PartTime / Fixed Amt")
+        print("Total Earning is \(calcEarning())")
+        
+        
+    }
+    
+}
