@@ -52,7 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zsl-ze-G02" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3494" y="341"/>
+            <point key="canvasLocation" x="3596" y="1017"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="33t-49-Fbe">
@@ -68,7 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4tI-Pb-ikY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3494" y="-308"/>
+            <point key="canvasLocation" x="3596" y="-1079"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wBD-Yp-8ta">
@@ -82,11 +82,45 @@
                     <connections>
                         <segue destination="Mrd-s1-GVw" kind="relationship" relationship="viewControllers" id="xwG-oO-ZQ9"/>
                         <segue destination="dcI-Cr-ucQ" kind="relationship" relationship="viewControllers" id="mCQ-t0-K6V"/>
+                        <segue destination="Wik-kJ-nfv" kind="relationship" relationship="viewControllers" id="WNu-3D-KbM"/>
+                        <segue destination="KGb-Py-mvR" kind="relationship" relationship="viewControllers" id="nb4-J7-Vu0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5CL-J3-fgd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2578" y="17"/>
+        </scene>
+        <!--AddEmployee-->
+        <scene sceneID="hty-9B-YmG">
+            <objects>
+                <viewController storyboardIdentifier="AddEmpVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wik-kJ-nfv" customClass="AddEmployeeViewController" customModule="Group3_F2019_MAD3115_FP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vgw-c6-K1g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="V9h-vY-NgG"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="AddEmployee" id="p7c-Ps-3PO" userLabel="AddEmployee"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4qF-y4-1Rm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3596" y="-389"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="jaM-PG-Vo9">
+            <objects>
+                <viewController id="KGb-Py-mvR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uOv-gU-oN0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5HR-Q4-XH4"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="0E5-dE-xbR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SCR-EU-IfM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3596" y="309"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="pDZ-kJ-W89">

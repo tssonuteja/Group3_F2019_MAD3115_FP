@@ -90,11 +90,11 @@
 		E981B39E237F6D64006434DF /* Group3_F2019_MAD3115_FP */ = {
 			isa = PBXGroup;
 			children = (
+				E981B3A5237F6D64006434DF /* Main.storyboard */,
 				E981B3C4237F7123006434DF /* Swift Files */,
 				E981B3C3237F70F3006434DF /* View Controllers */,
 				E981B39F237F6D64006434DF /* AppDelegate.swift */,
 				E981B3A1237F6D64006434DF /* SceneDelegate.swift */,
-				E981B3A5237F6D64006434DF /* Main.storyboard */,
 				E981B3A8237F6D65006434DF /* Assets.xcassets */,
 				E981B3AA237F6D65006434DF /* LaunchScreen.storyboard */,
 				E981B3AD237F6D65006434DF /* Info.plist */,
