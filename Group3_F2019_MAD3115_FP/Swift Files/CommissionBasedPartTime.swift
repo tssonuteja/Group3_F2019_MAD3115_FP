@@ -7,3 +7,27 @@
 //
 
 import Foundation
+class CommisionBasedPartTime: PartTime {
+    var commisionPercentage: Double?
+  
+    
+    
+    func calcEarnings() -> Double {
+        return (Double)(numberOfHoursWorked!*rate!) + ((Double(numberOfHoursWorked!*rate!))*(commisionPercentage!/100))
+    }
+    
+    
+    
+    
+    override func printMyData() {
+        super.printMydata()
+        print("Employee is Commision Based Part Time")
+        print("Total Earning is \(calcEarnings())")
+        
+        
+    }
+    
+    
+    
+    
+}
