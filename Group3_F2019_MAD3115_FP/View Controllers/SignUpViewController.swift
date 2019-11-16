@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SQLite3
 
 class SignUpViewController: UIViewController {
     
@@ -67,11 +68,12 @@ class SignUpViewController: UIViewController {
              self.present(myAlert,animated: true, completion: nil); return
         }
         
-    }
     
-    if (password != cnfPassword) {
-               let myAlert = UIAlertController(title: "Alert", message: "password do not match", preferredStyle: UIAlertControllerStyle.alert)
-               let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default, handler: nil)
+    
+    if (password != cnfPassword)
+    {
+        let myAlert = UIAlertController(title: "Alert", message: "password do not match", preferredStyle: UIAlertController.Style.alert)
+        let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
                myAlert.addAction(okAction)
                self.present(myAlert,animated: true, completion: nil); return
            }
@@ -84,80 +86,99 @@ class SignUpViewController: UIViewController {
          }
     
     if sqlite3_bind_text(stmt, 1, name, -1, nil) != SQLITE_OK {
-              print("error bind name")
-          return
-           }
-           
-           if sqlite3_bind_text(stmt, 2, email, -1, nil) != SQLITE_OK {
-            print("error bind email")
-               return
-            }
-
-           if sqlite3_bind_text(stmt, 3, password, -1, nil) != SQLITE_OK {
-               print("error bind password"); return
-            }
-       
-            if sqlite3_bind_text(stmt, 4, cnfPassword, -1, nil) != SQLITE_OK {
-               print("error bind cnfpassword"); return
-           }
-    
-    if sqlite3_step(stmt) == SQLITE_DONE{
-               print("data saved")
-               let myAlert = UIAlertController(title: "Alert", message: "SignUp Sucessfully!! Move to login Screen", preferredStyle: UIAlertControllerStyle.alert)
-                          let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default, handler: nil)
-                          myAlert.addAction(okAction)
-               self.present(myAlert,animated: true, completion: nil);
-             }
-           
-           
-           nameRegister.text = ""
-           emailIdRegister.text = ""
-           passwordRegister.text = ""
-           cnfPasswordRegister.text = ""
-           
-           readValues()
-           }
-    
-    
-    
-    @IBAction func btnGoToLoginScreen(_ sender: Any) {
-        
-       // performSegue(withIdentifier: "DVC", sender: self)
-        //}
-        
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            // Get the new view controller using
-            if let displayVC = segue.destination as? LoginViewController
-            {
-                displayVC.SignUpArray = SignUpArray
-                
-            }
+           print("error bind name")
+       return
         }
         
-        func readValues(){
-        
-         //first empty the list of register
-         registerArray.removeAll()
-         
-         //this is our select query
-         let queryString = "SELECT * FROM Signup"
-         
-         //statement pointer
-         var stmt:OpaquePointer?
-         
-         //preparing the query
-         if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
-             let errmsg = String(cString: sqlite3_errmsg(db)!)
-             print("error preparing insert: \(errmsg)")
-             return
+        if sqlite3_bind_text(stmt, 2, email, -1, nil) != SQLITE_OK {
+         print("error bind email")
+            return
          }
-        
-    
-    
-    
-    
-    
-    
 
-   
-}
+        if sqlite3_bind_text(stmt, 3, password, -1, nil) != SQLITE_OK {
+            print("error bind password"); return
+         }
+    
+         if sqlite3_bind_text(stmt, 4, cnfPassword, -1, nil) != SQLITE_OK {
+            print("error bind cnfpassword"); return
+        }
+       
+        if sqlite3_step(stmt) == SQLITE_DONE{
+            print("data saved")
+            let myAlert = UIAlertController(title: "Alert", message: "SignUp Sucessfully!! Move to login Screen", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil)
+                       myAlert.addAction(okAction)
+            self.present(myAlert,animated: true, completion: nil);
+          }
+        
+        //emptying the textfields
+        txtName.text = ""
+        regEmailID.text = ""
+        txtSuPassword.text = ""
+        txtSuCPassword.text = ""
+        
+        readValues()
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @IBAction func btnGoToLoginScreen(_ sender: Any)
+    {
+        
+            performSegue(withIdentifier: "LoginVC", sender: self)
+            }
+            
+            override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+                // Get the new view controller using
+                if let displayVC = segue.destination as? LoginViewController
+                {
+                    displayVC.SignUpArray = SignU
+                    
+                }
+            }
+            
+            
+            func readValues(){
+               
+                //first empty the list of register
+                SignUpArray.removeAll()
+                
+                //this is our select query
+                let queryString = "SELECT * FROM Signup"
+                
+                //statement pointer
+                var stmt:OpaquePointer?
+                
+                //preparing the query
+                if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK
+                {
+                    let errmsg = String(cString: sqlite3_errmsg(db)!)
+                    print("error preparing insert: \(errmsg)")
+                    return
+                }
+                
+                //traversing through all the records
+                while(sqlite3_step(stmt) == SQLITE_ROW){
+                    let id = sqlite3_column_int(stmt, 0)
+                    let name = String(cString: sqlite3_column_text(stmt, 1))
+                    let email = String(cString: sqlite3_column_text(stmt, 2))
+                    let password = String(cString: sqlite3_column_text(stmt, 3))
+                    let cnfpassword = String(cString: sqlite3_column_text(stmt, 4))
+                    //adding values to list
+                    SignUpArray.append(SignUp(id: Int(id), empName: String(describing: name), empEmailId: String(describing: email), empPassword: String(describing: password), cnfPassword: String(describing: cnfpassword)))
+                    }
+                print(registerArray.count)
+                }
+            
+            
+
+        }
+
