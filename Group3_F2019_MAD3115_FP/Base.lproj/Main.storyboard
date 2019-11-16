@@ -38,6 +38,21 @@
             </objects>
             <point key="canvasLocation" x="1112" y="17"/>
         </scene>
+        <!--Home View Controller-->
+        <scene sceneID="nv1-70-a2I">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cBZ-xa-tSu" customClass="HomeViewController" customModule="Group3_F2019_MAD3115_FP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qZd-te-coh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dbH-O8-5pV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2iM-Q1-O1x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1862" y="17"/>
+        </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="pDZ-kJ-W89">
             <objects>
