@@ -7,3 +7,6 @@
 //
 
 import Foundation
+protocol IPrintable {
+    func printMyData()
+}
