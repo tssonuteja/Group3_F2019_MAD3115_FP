@@ -7,3 +7,15 @@
 //
 
 import Foundation
+class Car: Vehicle
+{
+    var numberOfSeats: Int?
+    
+    
+    
+    override func printMyData() {
+        print("Employee Has a CAR")
+        super.printMyData()
+        print("car is = \(numberOfSeats!)\t Seater")
+    }
+}
