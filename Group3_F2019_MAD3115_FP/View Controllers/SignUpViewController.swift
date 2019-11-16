@@ -83,6 +83,24 @@ class SignUpViewController: UIViewController {
          return
          }
     
+    if sqlite3_bind_text(stmt, 1, name, -1, nil) != SQLITE_OK {
+              print("error bind name")
+          return
+           }
+           
+           if sqlite3_bind_text(stmt, 2, email, -1, nil) != SQLITE_OK {
+            print("error bind email")
+               return
+            }
+
+           if sqlite3_bind_text(stmt, 3, password, -1, nil) != SQLITE_OK {
+               print("error bind password"); return
+            }
+       
+            if sqlite3_bind_text(stmt, 4, cnfPassword, -1, nil) != SQLITE_OK {
+               print("error bind cnfpassword"); return
+           }
+    
     
     
     @IBAction func btnGoToLoginScreen(_ sender: Any) {
