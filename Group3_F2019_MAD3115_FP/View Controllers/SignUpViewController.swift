@@ -101,6 +101,23 @@ class SignUpViewController: UIViewController {
                print("error bind cnfpassword"); return
            }
     
+    if sqlite3_step(stmt) == SQLITE_DONE{
+               print("data saved")
+               let myAlert = UIAlertController(title: "Alert", message: "SignUp Sucessfully!! Move to login Screen", preferredStyle: UIAlertControllerStyle.alert)
+                          let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default, handler: nil)
+                          myAlert.addAction(okAction)
+               self.present(myAlert,animated: true, completion: nil);
+             }
+           
+           
+           nameRegister.text = ""
+           emailIdRegister.text = ""
+           passwordRegister.text = ""
+           cnfPasswordRegister.text = ""
+           
+           readValues()
+           }
+    
     
     
     @IBAction func btnGoToLoginScreen(_ sender: Any) {
