@@ -7,3 +7,13 @@
 //
 
 import Foundation
+class Vehicle: IPrintable
+{
+    var make: String?
+    var plate: String?
+    
+    
+    func printMyData() {
+        print("Make Of car is = \(make!) \nPlate of car is = \(plate!)")
+    }
+}
