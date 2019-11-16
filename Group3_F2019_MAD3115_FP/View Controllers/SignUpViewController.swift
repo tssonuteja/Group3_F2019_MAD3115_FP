@@ -121,15 +121,6 @@ class SignUpViewController: UIViewController {
         }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
     @IBAction func btnGoToLoginScreen(_ sender: Any)
     {
         
@@ -140,7 +131,7 @@ class SignUpViewController: UIViewController {
                 // Get the new view controller using
                 if let displayVC = segue.destination as? LoginViewController
                 {
-                    displayVC.SignUpArray = SignU
+                    displayVC.SignUpArray = SignUpArray
                     
                 }
             }
@@ -175,7 +166,7 @@ class SignUpViewController: UIViewController {
                     //adding values to list
                     SignUpArray.append(SignUp(id: Int(id), empName: String(describing: name), empEmailId: String(describing: email), empPassword: String(describing: password), cnfPassword: String(describing: cnfpassword)))
                     }
-                print(registerArray.count)
+                print(SignUpArray.count)
                 }
             
             
