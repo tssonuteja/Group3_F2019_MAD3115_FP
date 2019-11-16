@@ -121,7 +121,38 @@ class SignUpViewController: UIViewController {
     
     
     @IBAction func btnGoToLoginScreen(_ sender: Any) {
-    }
+        
+       // performSegue(withIdentifier: "DVC", sender: self)
+        //}
+        
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            // Get the new view controller using
+            if let displayVC = segue.destination as? LoginViewController
+            {
+                displayVC.SignUpArray = SignUpArray
+                
+            }
+        }
+        
+        func readValues(){
+        
+         //first empty the list of register
+         registerArray.removeAll()
+         
+         //this is our select query
+         let queryString = "SELECT * FROM Signup"
+         
+         //statement pointer
+         var stmt:OpaquePointer?
+         
+         //preparing the query
+         if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+             let errmsg = String(cString: sqlite3_errmsg(db)!)
+             print("error preparing insert: \(errmsg)")
+             return
+         }
+        
+    
     
     
     
