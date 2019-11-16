@@ -58,18 +58,21 @@ class LoginViewController: UIViewController {
                     print("User Email/Password incorrect")
             let myAlert = UIAlertController(title: "Alert", message: "Invalid Email/ Password !!", preferredStyle: UIAlertController.Style.alert)
             let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
-                    myAlert.addAction(okAction)
-                    self.present(myAlert,animated: true, completion: nil)
+                myAlert.addAction(okAction)
+                self.present(myAlert,animated: true, completion: nil)
                     }
                 
             }
         
         
-    }
+    
     
     
     @IBAction func btnSignUp(_ sender: Any) {
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let registerViewControlle = storyboard?.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpViewController
+        self.present(SignUpViewController, animated: true, completion: nil)
+        }
     }
     
-
-}
