@@ -43,9 +43,16 @@ class AddEmployeeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //test
-
-    }
+        
+    let fileUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("AddEmployee.sqlite")
+           if sqlite3_open(fileUrl.path, &db) != SQLITE_OK{
+               self.title = "hello Jeena"
+               print("error opening meassage")
+               return
+           }
+           if sqlite3_exec(db, "DROP TABLE IF EXISTS AddEmployee", nil, nil, nil) != SQLITE_OK{
+               print("deletrd")
+           }
     
     
     @IBOutlet weak var vehicleOption: UISegmentedControl!
