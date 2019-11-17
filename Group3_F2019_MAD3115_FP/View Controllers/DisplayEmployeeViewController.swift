@@ -43,6 +43,11 @@ class DisplayEmployeeViewController: UIViewController {
     
     @IBOutlet weak var lblEmployeeVehiclePlate: UILabel!
     
+    
+    @IBOutlet weak var lblEmployeeRate: UILabel!
+    
+    
+    
     override func viewDidLoad() {
     
         super.viewDidLoad()
@@ -61,7 +66,7 @@ class DisplayEmployeeViewController: UIViewController {
                    if (internArray[j].employeeId == Int(txtEmployeeID.text!)){
                        lblEmployeeName.text = internArray[j].employeeName
                        lblEmployeeBirthday.text = String(internArray[j].calBirthYear())
-                       //lblrate.text = String(internArray[j].stipend!)
+                       lblEmployeeRate.text = String(internArray[j].stipend!)
                        lblEmployeeHourlyRate.text = String(internArray[j].internSchoolName!)
                        lblEmployeeSalary.isHidden = true
                     
@@ -74,6 +79,15 @@ class DisplayEmployeeViewController: UIViewController {
                                    }}
                                else{
                                    print("not found") }
+            
+            
+            for j in 0...fullTimeArray.count-1{
+            if (fullTimeArray[j].employeeId == Int(txtEmployeeID.text!)){
+                lblEmployeeName.text = fullTimeArray[j].employeeName
+                lblEmployeeBirthday.text = String(fullTimeArray[j].calBirthYear())
+                lblEmployeeRate.text = String(fullTimeArray[j].bonus!)
+                lblEmployeeHourlyRate.text = String(fullTimeArray[j].calcEarning())
+                lblEmployeeSalary.isHidden = true
         
     }
     
