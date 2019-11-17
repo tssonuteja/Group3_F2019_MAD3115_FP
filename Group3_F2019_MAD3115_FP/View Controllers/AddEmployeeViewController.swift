@@ -108,6 +108,55 @@ class AddEmployeeViewController: UIViewController {
             break;
         }
         }
+    
+    
+    @IBOutlet weak var internView: UIView!
+    
+    
+    @IBOutlet weak var fullTimeView: UIView!
+    
+    
+    @IBOutlet weak var FixedBasedPartTimeView: UIView!
+    
+    
+    
+    @IBOutlet weak var employeementType: UISegmentedControl!
+    
+    
+    @IBAction func employeementTypeSegment(_ sender: Any) {
+        switch employeementType.selectedSegmentIndex {
+            case 0:
+             internView.isHidden = false
+             fullTimeView.isHidden = true
+             FixedBasedPartTimeView.isHidden = true
+                break
+            case 1:
+                fullTimeView.isHidden = false
+                internView.isHidden = true
+                FixedBasedPartTimeView.isHidden = true
+                break
+            case 2:
+                FixedBasedPartTimeView.isHidden = false
+                internView.isHidden = true
+                fullTimeView.isHidden = true
+                txtFixedBasedSalary.placeholder = " Enter Fixed Salary"
+                
+                break
+            case 3:
+                internView.isHidden = true
+                FixedBasedPartTimeView.isHidden = false
+                fullTimeView.isHidden = true
+                txtFixedBasedSalary.placeholder = "Enter Commision %"
+                break
+            
+            default:
+                break
+            }
+            }
+        
+        
+    }
+    
         
     }
     

@@ -246,6 +246,9 @@
                                     <segment title="FB - PT"/>
                                     <segment title="CB - PT"/>
                                 </segments>
+                                <connections>
+                                    <action selector="employeementTypeSegment:" destination="Wik-kJ-nfv" eventType="valueChanged" id="ynx-DD-S2x"/>
+                                </connections>
                             </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRl-af-d6f" userLabel="Inter View">
                                 <rect key="frame" x="12" y="566" width="390" height="170"/>
@@ -429,6 +432,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="AddEmployee" id="p7c-Ps-3PO" userLabel="AddEmployee"/>
                     <connections>
+                        <outlet property="FixedBasedPartTimeView" destination="Ub8-ft-wQJ" id="PqN-Uv-6Te"/>
+                        <outlet property="employeementType" destination="2r5-gU-ZlS" id="bq8-uX-PAZ"/>
+                        <outlet property="fullTimeView" destination="moN-hm-1Xn" id="Abh-js-hGo"/>
+                        <outlet property="internView" destination="VRl-af-d6f" id="dcq-vg-FV4"/>
                         <outlet property="txtCommissionBasedHourlyRate" destination="Rjn-5w-SYM" id="9bj-GW-LtB"/>
                         <outlet property="txtCommissionBasedHourlyWork" destination="rnu-0T-eGM" id="8hs-9P-56b"/>
                         <outlet property="txtCommissionBasedSalary" destination="gLj-4J-xoP" id="68S-oO-M4z"/>
