@@ -48,13 +48,23 @@ class DisplayEmployeeViewController: UIViewController {
         super.viewDidLoad()
         print(self.internArray)
         print(self.fullTimeArray)
-
-       
+    }
+    
+    override func didReceiveMemoryWarning() {
+           super.didReceiveMemoryWarning()
     }
     
     
     
     @IBAction func btnSeeDetails(_ sender: Any) {
+        for j in 0...internArray.count-1{
+                   if (internArray[j].employeeId == Int(txtEmployeeID.text!)){
+                       lblEmployeeName.text = internArray[j].employeeName
+                       lblEmployeeBirthday.text = String(internArray[j].calBirthYear())
+                       //lblrate.text = String(internArray[j].stipend!)
+                       lblEmployeeHourlyRate.text = String(internArray[j].internSchoolName!)
+                       lblEmployeeSalary.isHidden = true
+        
     }
     
 
