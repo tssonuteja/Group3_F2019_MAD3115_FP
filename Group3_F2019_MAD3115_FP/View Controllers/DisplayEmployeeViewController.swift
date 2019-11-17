@@ -64,6 +64,16 @@ class DisplayEmployeeViewController: UIViewController {
                        //lblrate.text = String(internArray[j].stipend!)
                        lblEmployeeHourlyRate.text = String(internArray[j].internSchoolName!)
                        lblEmployeeSalary.isHidden = true
+                    
+                    
+                    if internArray[j].vehicle == nil{
+                                       lblEmployeeVehicleMake.text = "employee has no vehicle"
+                                   }else{
+                                       lblEmployeeVehicleMake.text = "make is \(internArray[j].vehicle?.make! ?? "AUDI")"
+                                       lblEmployeeVehiclePlate.text = "plate is \(internArray[j].vehicle?.plate! ?? "C76ON1")"
+                                   }}
+                               else{
+                                   print("not found") }
         
     }
     
