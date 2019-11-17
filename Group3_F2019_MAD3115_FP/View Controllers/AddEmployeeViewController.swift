@@ -171,6 +171,77 @@ class AddEmployeeViewController: UIViewController {
           let hoursworked = txtFixedBasedHoursWorked.text!
           let rate = txtFixedBasedHourlyRate.text!
         
+        
+        
+        var stmt: OpaquePointer?
+        
+        
+        let queryString = "INSERT INTO AddEmployee ( employeeid, name ,age ,make ,plate ,attribute ,stipend ,schoolname ,salary , commissionpercentage , hoursworked , fixedsalary , rate ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)"
+        //preparing the query
+        if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+            print("error bindind Query"); return;
+            
+        }
+        
+        //binding the parameters
+        if sqlite3_bind_int(stmt, 1, (employeeid! as NSString).intValue) != SQLITE_OK {
+            print("error bind email")
+            return;
+        }
+        
+        //binding the parameters
+        if sqlite3_bind_text(stmt, 2, name, -1, nil) != SQLITE_OK{
+            let errmsg = String(cString: sqlite3_errmsg(db)!)
+            print("failure binding name: \(errmsg)")
+            return
+        }
+      //  if sqlite3_bind_int(stmt, 3,(age! as NSString).intValue) != SQLITE_OK {
+          //  print("error bind email")
+            //return
+      //  }
+        
+        if sqlite3_bind_text(stmt, 4, make, -1, nil) != SQLITE_OK {
+            print("error bind email")
+            return
+        }
+        
+        if sqlite3_bind_text(stmt, 5, plate, -1, nil) != SQLITE_OK {
+            print("error bind email")
+            return
+        }
+        if sqlite3_bind_text(stmt, 6, attribute, -1, nil) != SQLITE_OK {
+            print("error bind email")
+            return
+        }
+        if sqlite3_bind_int(stmt, 7, (stipend as NSString).intValue) != SQLITE_OK {
+            print("error bind email")
+            return
+        }
+        if sqlite3_bind_text(stmt, 8, schoolname, -1, nil) != SQLITE_OK {
+            print("error bind email")
+            return
+        }
+        if sqlite3_bind_text(stmt, 9, salary, -1, nil) != SQLITE_OK {
+            print("error bind email")
+            return
+        }
+        if sqlite3_bind_int(stmt, 10,(commissionpercentage as NSString).intValue) != SQLITE_OK {
+            print("error bind email")
+            return
+        }
+        if sqlite3_bind_int(stmt, 11, (fixedsalary as NSString).intValue)  != SQLITE_OK {
+            print("error bind email")
+            return
+        }
+        if sqlite3_bind_int(stmt, 12, (hoursworked as NSString).intValue)   != SQLITE_OK {
+            print("error bind email")
+            return
+        }
+        if sqlite3_bind_int(stmt, 13, (rate as NSString).intValue) != SQLITE_OK {
+            print("error bind email")
+            return
+        }
+        
     }
     
     
