@@ -280,6 +280,62 @@ class AddEmployeeViewController: UIViewController {
                           let fixedsalary = sqlite3_column_double(stmt, 11)
                           let hoursworked = sqlite3_column_int(stmt, 12)
                           let rate = sqlite3_column_int(stmt, 13)
+                    
+                    
+                    
+                    
+                    
+                             switch employeementType.selectedSegmentIndex {
+                              case 0:
+                                  let intern = Intern()
+                                  intern.employeeName = name
+                                  intern.employeeId = Int(employeeid)
+                                  intern.age = Int(age)
+                                  intern.internSchoolName = schoolname
+                                  intern.stipend = Int(stipend)
+                                  if vehicleSeg.selectedSegmentIndex == 0{
+                                      intern.vehicle = nil
+                                  }else{
+                                      if ve.selectedSegmentIndex == 0{
+                                          let car = Car()
+                                          car.make = make
+                                          car.plate = plate
+                                          car.numberOfSeats = Int(attribute)
+                                          intern.vehicle = car
+                                      }else {
+                                         let  motorcycle = Motorcycle()
+                                          motorcycle.make = make
+                                          motorcycle.plate = plate
+                                          motorcycle.getKerbWeight = Int(attribute)
+                                          intern.vehicle = motorcycle
+                                      }  }
+                                  internArray.append(intern)
+                                  break
+                              case 1:
+                                  let fullTime = FullTimeEmployee()
+                                  fullTime.employeeName = name
+                                  fullTime.employeeId = Int(employeeid)
+                                  fullTime.age = Int(age)
+                                  fullTime.salary = Double(salary)
+                                  fullTime.bonus = Double(commissionpercentage)
+                              if vehicleOption.selectedSegmentIndex == 0{
+                                     fullTime.vehicle = nil
+                                 }else{
+                                      if vehicleSeg.selectedSegmentIndex == 0{
+                                          let car = Car()
+                                          car.make = make
+                                          car.plate = plate
+                                          car.numberOfSeats = Int(attribute)
+                                          fullTime.vehicle = car
+                                     }else {
+                                          let motorcycle = Motorcycle()
+                                          motorcycle.make = make
+                                          motorcycle.plate = plate
+                                          motorcycle.getKerbWeight = Int(attribute)
+                                          fullTime.vehicle = motorcycle
+                                      }  }
+                                  fullTimeArray.append(fullTime)
+                                  break
                 
                 
         
