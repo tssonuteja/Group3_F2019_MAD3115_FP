@@ -424,7 +424,15 @@
                     <tabBarItem key="tabBarItem" title="AddEmployee" id="p7c-Ps-3PO" userLabel="AddEmployee"/>
                     <connections>
                         <outlet property="txtEmpID" destination="LJN-Jp-Akb" id="BSL-eZ-atM"/>
+                        <outlet property="txtFixedBasedHourlyRate" destination="m6Z-YB-uPL" id="sRd-Rg-ERI"/>
+                        <outlet property="txtFixedBasedHoursWorked" destination="Vly-Om-tC2" id="PzY-Nr-Zcd"/>
+                        <outlet property="txtFixedBasedSalary" destination="glW-cR-Lj0" id="5TF-Eb-GbF"/>
                         <outlet property="txtFullName" destination="wg9-PA-IOk" id="2hk-hW-X5w"/>
+                        <outlet property="txtFullTimeCommissionPercentage" destination="uN7-S4-E4B" id="7uZ-C4-u2V"/>
+                        <outlet property="txtFullTimeSalary" destination="wdd-ae-fyk" id="9vC-V9-yIc"/>
+                        <outlet property="txtSchoolName" destination="hpR-EB-IvQ" id="4aK-Iz-AHF"/>
+                        <outlet property="txtStipend" destination="pZJ-uN-RJu" id="L7r-8v-1gW"/>
+                        <outlet property="txtVehicleColour" destination="QdT-E6-Gc4" id="u4T-n6-MSd"/>
                         <outlet property="txtVehicleMake" destination="Zkw-Ru-95b" id="0kM-T8-Y4F"/>
                         <outlet property="txtVehiclePlate" destination="l3E-pQ-AgS" id="VJj-zQ-e2f"/>
                     </connections>
