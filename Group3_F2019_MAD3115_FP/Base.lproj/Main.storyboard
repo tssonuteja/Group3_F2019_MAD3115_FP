@@ -170,18 +170,255 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kh0-Fp-ukf">
-                                <rect key="frame" x="0.0" y="44" width="32" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter FullName" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wg9-PA-IOk">
-                                <rect key="frame" x="20" y="93" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter FullName" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wg9-PA-IOk">
+                                <rect key="frame" x="20" y="59" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Employee Birthday" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ks-po-WWl">
+                                <rect key="frame" x="20" y="111" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Employee ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LJN-Jp-Akb">
+                                <rect key="frame" x="20" y="165" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Make" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zkw-Ru-95b">
+                                <rect key="frame" x="20" y="334" width="180" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="wSH-8d-Sid"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Does Employee has a Vehicle?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ab-EW-kfh">
+                                <rect key="frame" x="20" y="223" width="237" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gf-6H-RO0">
+                                <rect key="frame" x="20" y="471" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Va2-sp-RK4">
+                                <rect key="frame" x="20" y="276" width="374" height="32"/>
+                                <segments>
+                                    <segment title="Car"/>
+                                    <segment title="Motorcycle"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Plate" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l3E-pQ-AgS">
+                                <rect key="frame" x="214" y="334" width="180" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Car/Motorcycle Colour" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QdT-E6-Gc4">
+                                <rect key="frame" x="20" y="386" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tOi-Xv-wQD">
+                                <rect key="frame" x="265" y="223" width="129" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="72a-dn-Hsf"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="" image="checkmark.circle" catalog="system"/>
+                                    <segment title="" image="xmark.circle" catalog="system"/>
+                                </segments>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2r5-gU-ZlS">
+                                <rect key="frame" x="20" y="511" width="374" height="32"/>
+                                <segments>
+                                    <segment title="Full-Time"/>
+                                    <segment title="Intern"/>
+                                    <segment title="FB - PT"/>
+                                    <segment title="CB - PT"/>
+                                </segments>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRl-af-d6f" userLabel="Inter View">
+                                <rect key="frame" x="12" y="566" width="390" height="170"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Intern Stipend" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pZJ-uN-RJu">
+                                        <rect key="frame" x="8" y="30" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Intern School Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hpR-EB-IvQ">
+                                        <rect key="frame" x="8" y="89" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="hpR-EB-IvQ" firstAttribute="top" secondItem="pZJ-uN-RJu" secondAttribute="bottom" constant="25" id="3eF-LN-BoR"/>
+                                    <constraint firstItem="pZJ-uN-RJu" firstAttribute="top" secondItem="VRl-af-d6f" secondAttribute="top" constant="30" id="4Xi-Xk-uAK"/>
+                                    <constraint firstItem="pZJ-uN-RJu" firstAttribute="leading" secondItem="hpR-EB-IvQ" secondAttribute="leading" id="JW2-9W-Z2h"/>
+                                    <constraint firstItem="pZJ-uN-RJu" firstAttribute="leading" secondItem="VRl-af-d6f" secondAttribute="leadingMargin" id="VG9-n4-yPE"/>
+                                    <constraint firstItem="pZJ-uN-RJu" firstAttribute="trailing" secondItem="hpR-EB-IvQ" secondAttribute="trailing" id="nQB-eT-fWt"/>
+                                    <constraint firstItem="pZJ-uN-RJu" firstAttribute="trailing" secondItem="VRl-af-d6f" secondAttribute="trailingMargin" id="o3o-dk-Uhx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="moN-hm-1Xn" userLabel="Full Time VIew">
+                                <rect key="frame" x="20" y="566" width="366" height="170"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Full Time Commision %" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uN7-S4-E4B">
+                                        <rect key="frame" x="-4" y="90" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Full Time Salary" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wdd-ae-fyk">
+                                        <rect key="frame" x="-4" y="31" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="wdd-ae-fyk" firstAttribute="top" secondItem="moN-hm-1Xn" secondAttribute="top" constant="31" id="1rl-S2-Dp4"/>
+                                    <constraint firstItem="wdd-ae-fyk" firstAttribute="trailing" secondItem="uN7-S4-E4B" secondAttribute="trailing" id="BXn-ey-30w"/>
+                                    <constraint firstItem="wdd-ae-fyk" firstAttribute="centerX" secondItem="moN-hm-1Xn" secondAttribute="centerX" id="EaV-E7-ciZ"/>
+                                    <constraint firstItem="wdd-ae-fyk" firstAttribute="leading" secondItem="uN7-S4-E4B" secondAttribute="leading" id="OBb-bJ-aJe"/>
+                                    <constraint firstItem="uN7-S4-E4B" firstAttribute="top" secondItem="wdd-ae-fyk" secondAttribute="bottom" constant="25" id="YLG-dz-Qo7"/>
+                                    <constraint firstItem="wdd-ae-fyk" firstAttribute="leading" secondItem="moN-hm-1Xn" secondAttribute="leading" constant="-4" id="r9S-n3-7UP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ub8-ft-wQJ" userLabel="FixedBased - PartTime View">
+                                <rect key="frame" x="12" y="566" width="382" height="170"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fixed Based Salary" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="glW-cR-Lj0">
+                                        <rect key="frame" x="3" y="8" width="376" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fixed Based Hourly - Rate" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m6Z-YB-uPL">
+                                        <rect key="frame" x="3" y="62" width="376" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fixed Based Hours - Worked" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vly-Om-tC2">
+                                        <rect key="frame" x="3" y="118" width="376" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="Vly-Om-tC2" firstAttribute="top" secondItem="m6Z-YB-uPL" secondAttribute="bottom" constant="22" id="4fF-aM-fAS"/>
+                                    <constraint firstItem="glW-cR-Lj0" firstAttribute="trailing" secondItem="m6Z-YB-uPL" secondAttribute="trailing" id="5GM-eE-I66"/>
+                                    <constraint firstItem="m6Z-YB-uPL" firstAttribute="top" secondItem="glW-cR-Lj0" secondAttribute="bottom" constant="20" id="AJk-IF-yA0"/>
+                                    <constraint firstItem="glW-cR-Lj0" firstAttribute="top" secondItem="Ub8-ft-wQJ" secondAttribute="topMargin" id="Geu-SC-Fvw"/>
+                                    <constraint firstItem="glW-cR-Lj0" firstAttribute="centerX" secondItem="Ub8-ft-wQJ" secondAttribute="centerX" id="KN3-cO-jqp"/>
+                                    <constraint firstItem="glW-cR-Lj0" firstAttribute="leading" secondItem="m6Z-YB-uPL" secondAttribute="leading" id="LDI-8F-osV"/>
+                                    <constraint firstItem="m6Z-YB-uPL" firstAttribute="trailing" secondItem="Vly-Om-tC2" secondAttribute="trailing" id="QoX-AN-WPJ"/>
+                                    <constraint firstItem="glW-cR-Lj0" firstAttribute="leading" secondItem="Ub8-ft-wQJ" secondAttribute="leading" constant="3" id="SNY-Fv-3Bg"/>
+                                    <constraint firstItem="m6Z-YB-uPL" firstAttribute="leading" secondItem="Vly-Om-tC2" secondAttribute="leading" id="njT-Tm-mUB"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C8m-4K-TYF" userLabel="Commission Based - PartTIme VIew">
+                                <rect key="frame" x="12" y="550" width="382" height="186"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Commission Based Salary" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gLj-4J-xoP">
+                                        <rect key="frame" x="3" y="25" width="376" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Commission Based - Hourly Rate" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rjn-5w-SYM">
+                                        <rect key="frame" x="3" y="77" width="376" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Commission Based - Hours Worked" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rnu-0T-eGM">
+                                        <rect key="frame" x="3" y="132" width="376" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="gLj-4J-xoP" firstAttribute="leading" secondItem="Rjn-5w-SYM" secondAttribute="leading" id="4Oc-Vd-oVd"/>
+                                    <constraint firstItem="gLj-4J-xoP" firstAttribute="trailing" secondItem="Rjn-5w-SYM" secondAttribute="trailing" id="4eB-sx-eOX"/>
+                                    <constraint firstItem="Rjn-5w-SYM" firstAttribute="leading" secondItem="rnu-0T-eGM" secondAttribute="leading" id="5QJ-rZ-OSX"/>
+                                    <constraint firstItem="gLj-4J-xoP" firstAttribute="centerX" secondItem="C8m-4K-TYF" secondAttribute="centerX" id="6eq-WL-Slh"/>
+                                    <constraint firstItem="gLj-4J-xoP" firstAttribute="top" secondItem="C8m-4K-TYF" secondAttribute="top" constant="25" id="B0f-qf-uUN"/>
+                                    <constraint firstItem="Rjn-5w-SYM" firstAttribute="top" secondItem="gLj-4J-xoP" secondAttribute="bottom" constant="18" id="KbV-tH-WfI"/>
+                                    <constraint firstItem="gLj-4J-xoP" firstAttribute="leading" secondItem="C8m-4K-TYF" secondAttribute="leading" constant="3" id="Nn8-DO-Mh1"/>
+                                    <constraint firstItem="rnu-0T-eGM" firstAttribute="top" secondItem="Rjn-5w-SYM" secondAttribute="bottom" constant="21" id="f3j-Iq-YIq"/>
+                                    <constraint firstItem="Rjn-5w-SYM" firstAttribute="trailing" secondItem="rnu-0T-eGM" secondAttribute="trailing" id="yoO-m3-2EG"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtT-du-akK">
+                                <rect key="frame" x="12" y="736" width="382" height="30"/>
+                                <state key="normal" title="Save Data"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lS2-Nr-BOI">
+                                <rect key="frame" x="12" y="779" width="382" height="30"/>
+                                <state key="normal" title="Click Here for Employee Details"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tOi-Xv-wQD" firstAttribute="leading" secondItem="5ab-EW-kfh" secondAttribute="trailing" constant="8" id="1OQ-3M-9Oy"/>
+                            <constraint firstItem="C8m-4K-TYF" firstAttribute="top" secondItem="2r5-gU-ZlS" secondAttribute="bottom" constant="8" id="1Vm-tu-CUD"/>
+                            <constraint firstItem="4gf-6H-RO0" firstAttribute="leading" secondItem="2r5-gU-ZlS" secondAttribute="leading" id="1xR-DK-N7Q"/>
+                            <constraint firstItem="wg9-PA-IOk" firstAttribute="leading" secondItem="Vgw-c6-K1g" secondAttribute="leadingMargin" id="3h9-zm-OgR"/>
+                            <constraint firstItem="2r5-gU-ZlS" firstAttribute="leading" secondItem="moN-hm-1Xn" secondAttribute="leading" id="49g-0s-c5g"/>
+                            <constraint firstItem="moN-hm-1Xn" firstAttribute="centerX" secondItem="Ub8-ft-wQJ" secondAttribute="centerX" id="4Nz-2W-vvT"/>
+                            <constraint firstItem="C8m-4K-TYF" firstAttribute="bottom" secondItem="moN-hm-1Xn" secondAttribute="bottom" id="546-Pk-7Ok"/>
+                            <constraint firstItem="VRl-af-d6f" firstAttribute="bottom" secondItem="Ub8-ft-wQJ" secondAttribute="bottom" id="8Qe-Bj-EvY"/>
+                            <constraint firstItem="2r5-gU-ZlS" firstAttribute="trailing" secondItem="C8m-4K-TYF" secondAttribute="trailing" id="8Tw-Pq-Jyx"/>
+                            <constraint firstItem="LJN-Jp-Akb" firstAttribute="trailing" secondItem="tOi-Xv-wQD" secondAttribute="trailing" id="9Xh-VM-Bqw"/>
+                            <constraint firstItem="LJN-Jp-Akb" firstAttribute="leading" secondItem="5ab-EW-kfh" secondAttribute="leading" id="9o8-wB-EM2"/>
+                            <constraint firstItem="QdT-E6-Gc4" firstAttribute="trailing" secondItem="4gf-6H-RO0" secondAttribute="trailing" id="BYc-Cp-d5L"/>
+                            <constraint firstItem="V9h-vY-NgG" firstAttribute="trailing" secondItem="moN-hm-1Xn" secondAttribute="trailing" constant="28" id="DVv-PK-NdQ"/>
+                            <constraint firstItem="V9h-vY-NgG" firstAttribute="bottom" secondItem="lS2-Nr-BOI" secondAttribute="bottom" constant="4" id="IY7-t3-cD4"/>
+                            <constraint firstItem="Zkw-Ru-95b" firstAttribute="top" secondItem="Va2-sp-RK4" secondAttribute="bottom" constant="27" id="IoC-ex-nPF"/>
+                            <constraint firstItem="CtT-du-akK" firstAttribute="trailing" secondItem="lS2-Nr-BOI" secondAttribute="trailing" id="IuA-eE-bXi"/>
+                            <constraint firstItem="Zkw-Ru-95b" firstAttribute="baseline" secondItem="l3E-pQ-AgS" secondAttribute="baseline" id="KFQ-gZ-tbN"/>
+                            <constraint firstItem="wg9-PA-IOk" firstAttribute="leading" secondItem="3ks-po-WWl" secondAttribute="leading" id="Kmu-dW-Mbm"/>
+                            <constraint firstItem="VRl-af-d6f" firstAttribute="leading" secondItem="V9h-vY-NgG" secondAttribute="leading" constant="12" id="NIk-kf-8J6"/>
+                            <constraint firstItem="3ks-po-WWl" firstAttribute="trailing" secondItem="LJN-Jp-Akb" secondAttribute="trailing" id="O03-aI-ra0"/>
+                            <constraint firstItem="QdT-E6-Gc4" firstAttribute="top" secondItem="Zkw-Ru-95b" secondAttribute="bottom" constant="18" id="QQA-lc-w5D"/>
+                            <constraint firstItem="Ub8-ft-wQJ" firstAttribute="top" secondItem="moN-hm-1Xn" secondAttribute="top" id="QxE-Hv-7Dd"/>
+                            <constraint firstItem="3ks-po-WWl" firstAttribute="top" secondItem="wg9-PA-IOk" secondAttribute="bottom" constant="18" id="TMv-Td-pl8"/>
+                            <constraint firstItem="lS2-Nr-BOI" firstAttribute="top" secondItem="CtT-du-akK" secondAttribute="bottom" constant="13" id="Tnw-Tg-bVt"/>
+                            <constraint firstItem="5ab-EW-kfh" firstAttribute="bottom" secondItem="tOi-Xv-wQD" secondAttribute="bottom" id="VaT-g2-CUp"/>
+                            <constraint firstItem="QdT-E6-Gc4" firstAttribute="leading" secondItem="4gf-6H-RO0" secondAttribute="leading" id="WXJ-D2-IOM"/>
+                            <constraint firstItem="3ks-po-WWl" firstAttribute="leading" secondItem="LJN-Jp-Akb" secondAttribute="leading" id="XuC-tf-MFO"/>
+                            <constraint firstItem="2r5-gU-ZlS" firstAttribute="centerX" secondItem="VRl-af-d6f" secondAttribute="centerX" id="YQ9-ey-hMQ"/>
+                            <constraint firstItem="5ab-EW-kfh" firstAttribute="top" secondItem="tOi-Xv-wQD" secondAttribute="top" id="ZaI-bM-HNh"/>
+                            <constraint firstItem="C8m-4K-TYF" firstAttribute="leading" secondItem="Ub8-ft-wQJ" secondAttribute="leading" id="aT2-3h-Flj"/>
+                            <constraint firstItem="CtT-du-akK" firstAttribute="top" secondItem="Ub8-ft-wQJ" secondAttribute="bottom" id="bim-n7-IR9"/>
+                            <constraint firstItem="VRl-af-d6f" firstAttribute="top" secondItem="Ub8-ft-wQJ" secondAttribute="top" id="d5R-SI-gVB"/>
+                            <constraint firstItem="Va2-sp-RK4" firstAttribute="top" secondItem="5ab-EW-kfh" secondAttribute="bottom" constant="22" id="e6l-Om-bZg"/>
+                            <constraint firstItem="wg9-PA-IOk" firstAttribute="trailing" secondItem="3ks-po-WWl" secondAttribute="trailing" id="egq-db-7o9"/>
+                            <constraint firstItem="C8m-4K-TYF" firstAttribute="bottom" secondItem="Ub8-ft-wQJ" secondAttribute="bottom" id="grv-lA-UN4"/>
+                            <constraint firstItem="4gf-6H-RO0" firstAttribute="trailing" secondItem="2r5-gU-ZlS" secondAttribute="trailing" id="iJG-cn-awz"/>
+                            <constraint firstItem="5ab-EW-kfh" firstAttribute="top" secondItem="LJN-Jp-Akb" secondAttribute="bottom" constant="24" id="iLr-kZ-b0n"/>
+                            <constraint firstItem="Zkw-Ru-95b" firstAttribute="leading" secondItem="QdT-E6-Gc4" secondAttribute="leading" id="jYQ-h5-Hpk"/>
+                            <constraint firstItem="wg9-PA-IOk" firstAttribute="top" secondItem="V9h-vY-NgG" secondAttribute="top" constant="15" id="jqg-rX-wRx"/>
+                            <constraint firstItem="Ub8-ft-wQJ" firstAttribute="trailing" secondItem="CtT-du-akK" secondAttribute="trailing" id="m2h-Xj-i49"/>
+                            <constraint firstItem="wg9-PA-IOk" firstAttribute="trailing" secondItem="Vgw-c6-K1g" secondAttribute="trailingMargin" id="mbM-FJ-GSQ"/>
+                            <constraint firstItem="Va2-sp-RK4" firstAttribute="leading" secondItem="Zkw-Ru-95b" secondAttribute="leading" id="o3r-EF-p7x"/>
+                            <constraint firstItem="2r5-gU-ZlS" firstAttribute="top" secondItem="4gf-6H-RO0" secondAttribute="bottom" constant="19" id="qbw-YG-sgh"/>
+                            <constraint firstItem="LJN-Jp-Akb" firstAttribute="top" secondItem="3ks-po-WWl" secondAttribute="bottom" constant="20" id="rEM-ky-pzT"/>
+                            <constraint firstItem="l3E-pQ-AgS" firstAttribute="leading" secondItem="Zkw-Ru-95b" secondAttribute="trailing" constant="14" id="rIt-2u-MV5"/>
+                            <constraint firstItem="C8m-4K-TYF" firstAttribute="trailing" secondItem="Ub8-ft-wQJ" secondAttribute="trailing" id="rg1-b7-aZm"/>
+                            <constraint firstItem="tOi-Xv-wQD" firstAttribute="trailing" secondItem="Va2-sp-RK4" secondAttribute="trailing" id="sPU-nU-HjO"/>
+                            <constraint firstItem="Va2-sp-RK4" firstAttribute="trailing" secondItem="l3E-pQ-AgS" secondAttribute="trailing" id="sk3-MI-GzN"/>
+                            <constraint firstItem="4gf-6H-RO0" firstAttribute="top" secondItem="QdT-E6-Gc4" secondAttribute="bottom" constant="51" id="slB-PU-pgx"/>
+                            <constraint firstItem="l3E-pQ-AgS" firstAttribute="trailing" secondItem="QdT-E6-Gc4" secondAttribute="trailing" id="uiQ-aP-FPJ"/>
+                            <constraint firstItem="moN-hm-1Xn" firstAttribute="top" secondItem="2r5-gU-ZlS" secondAttribute="bottom" constant="24" id="usR-Bz-DaR"/>
+                            <constraint firstItem="CtT-du-akK" firstAttribute="leading" secondItem="lS2-Nr-BOI" secondAttribute="leading" id="vvm-BF-9AL"/>
+                            <constraint firstItem="Ub8-ft-wQJ" firstAttribute="leading" secondItem="CtT-du-akK" secondAttribute="leading" id="w0F-zy-FVg"/>
+                            <constraint firstItem="5ab-EW-kfh" firstAttribute="leading" secondItem="Va2-sp-RK4" secondAttribute="leading" id="y6z-9b-Vtf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="V9h-vY-NgG"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="AddEmployee" id="p7c-Ps-3PO" userLabel="AddEmployee"/>
@@ -325,4 +562,8 @@
             <point key="canvasLocation" x="-414" y="17"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="checkmark.circle" catalog="system" width="64" height="60"/>
+        <image name="xmark.circle" catalog="system" width="64" height="60"/>
+    </resources>
 </document>
