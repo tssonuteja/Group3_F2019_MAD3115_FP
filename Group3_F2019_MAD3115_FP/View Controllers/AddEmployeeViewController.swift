@@ -361,8 +361,32 @@ class AddEmployeeViewController: UIViewController {
         
     
     
+    @IBAction func btnViewEmployeeDetails(_ sender: Any) {
+        
+        
+        performSegue(withIdentifier: "LDVC", sender: self)
+         }
+         
+         
+        
+         
+         
+         
+         override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+             if let displayVCD = segue.destination as? DispalyEmployeeViewController{
+                 
+                 displayVCD.cbptArray = cbptArray
+                 displayVCD.fbptArray = fbptArray
+                 displayVCD.internArray = internArray
+                 displayVCD.fullTimeArray = fullTimeArray
+             }
+         }
+         
+         
+    }
+    
+    
     
     
     
 
-}

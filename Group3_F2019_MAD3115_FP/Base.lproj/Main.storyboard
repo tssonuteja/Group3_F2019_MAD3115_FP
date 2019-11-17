@@ -372,6 +372,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lS2-Nr-BOI">
                                 <rect key="frame" x="12" y="779" width="382" height="30"/>
                                 <state key="normal" title="Click Here for Employee Details"/>
+                                <connections>
+                                    <action selector="btnViewEmployeeDetails:" destination="Wik-kJ-nfv" eventType="touchUpInside" id="tCy-Kx-GCM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
