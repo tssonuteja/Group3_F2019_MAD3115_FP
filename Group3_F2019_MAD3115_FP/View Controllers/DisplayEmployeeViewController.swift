@@ -44,9 +44,17 @@ class DisplayEmployeeViewController: UIViewController {
     @IBOutlet weak var lblEmployeeVehiclePlate: UILabel!
     
     override func viewDidLoad() {
+    
         super.viewDidLoad()
+        print(self.internArray)
+        print(self.fullTimeArray)
 
        
+    }
+    
+    
+    
+    @IBAction func btnSeeDetails(_ sender: Any) {
     }
     
 

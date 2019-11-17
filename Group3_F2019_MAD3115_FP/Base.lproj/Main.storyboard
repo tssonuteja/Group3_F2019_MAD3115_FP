@@ -489,6 +489,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Click here to get Employee Details" image="arrow.down.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="btnSeeDetails:" destination="Fj2-Ws-ZMg" eventType="touchUpInside" id="8RW-mi-JQl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Display Employee Birthday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAj-gK-MzQ">
                                 <rect key="frame" x="55" y="333" width="304" height="40"/>
