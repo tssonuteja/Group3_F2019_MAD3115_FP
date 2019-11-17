@@ -242,6 +242,40 @@ class AddEmployeeViewController: UIViewController {
             return
         }
         
+         if sqlite3_step(stmt) == SQLITE_DONE{
+                    print("data saved")
+            let myAlert = UIAlertController(title: "Alert", message: "Data saved", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+                    myAlert.addAction(okAction)
+                    self.present(myAlert,animated: true, completion: nil);
+                }
+                readValues()
+                //switch end here
+                }
+           
+            func readValues(){
+                
+                //first empty the list of register
+        //       internArray.removeAll()
+        //        fullTimeArray.removeAll()
+        //        cbptArray.removeAll()
+        //        fbptArray.removeAll()
+                
+                //this is our select query
+                let queryString = "SELECT * FROM AddEmployee "
+                
+                //statement pointer
+                var stmt:OpaquePointer?
+                
+                //preparing the query
+                if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
+                    let errmsg = String(cString: sqlite3_errmsg(db)!)
+                    print("error preparing insert: \(errmsg)")
+                    return
+                }
+                
+                
+        
     }
     
     
