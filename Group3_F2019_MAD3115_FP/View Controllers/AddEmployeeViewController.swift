@@ -64,7 +64,7 @@ class AddEmployeeViewController: UIViewController {
                txtVehiclePlate.isEnabled = false
                internView.isHidden = false
               fullTimeView.isHidden = true
-              fbptView.isHidden = true
+              FixedBasedPartTimeView.isHidden = true
                readValues()
                }
 
@@ -296,7 +296,7 @@ class AddEmployeeViewController: UIViewController {
                                   if vehicleSeg.selectedSegmentIndex == 0{
                                       intern.vehicle = nil
                                   }else{
-                                      if ve.selectedSegmentIndex == 0{
+                                      if vehicleSeg.selectedSegmentIndex == 0{
                                           let car = Car()
                                           car.make = make
                                           car.plate = plate
@@ -339,17 +339,26 @@ class AddEmployeeViewController: UIViewController {
                 
                 
         
-    }
+                             let fixedPasePartTime = FixedBasePartTime()
+                                            
+                                            fixedPasePartTime.employeeName = name
+                                            fixedPasePartTime.employeeId = Int(employeeid)
+                                            fixedPasePartTime.age = Int(age)
+                                            fixedPasePartTime.fixedAmount = Int(fixedsalary)
+                                            fixedPasePartTime.numberOfHoursWorked = Int(hoursworked)
+                                            fixedPasePartTime.rate =  Int(rate)
     
     
+        fbptArray.append(fixedPasePartTime)
+        break
+            default:
+            break;
+                }
+                 
+                 }
+
+         }
         
-        
-    }
-    
-        
-    }
-    
-    }
     
     
     
