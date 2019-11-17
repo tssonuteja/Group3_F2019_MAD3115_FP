@@ -422,6 +422,12 @@
                         <viewLayoutGuide key="safeArea" id="V9h-vY-NgG"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="AddEmployee" id="p7c-Ps-3PO" userLabel="AddEmployee"/>
+                    <connections>
+                        <outlet property="txtEmpID" destination="LJN-Jp-Akb" id="BSL-eZ-atM"/>
+                        <outlet property="txtFullName" destination="wg9-PA-IOk" id="2hk-hW-X5w"/>
+                        <outlet property="txtVehicleMake" destination="Zkw-Ru-95b" id="0kM-T8-Y4F"/>
+                        <outlet property="txtVehiclePlate" destination="l3E-pQ-AgS" id="VJj-zQ-e2f"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4qF-y4-1Rm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
