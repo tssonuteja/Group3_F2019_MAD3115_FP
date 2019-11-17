@@ -618,6 +618,17 @@
                         <viewLayoutGuide key="safeArea" id="tem-vo-BzU"/>
                     </view>
                     <navigationItem key="navigationItem" id="YFu-PO-fEC"/>
+                    <connections>
+                        <outlet property="lblEmployeeBirthday" destination="HAj-gK-MzQ" id="hjJ-rL-ouF"/>
+                        <outlet property="lblEmployeeHourlyRate" destination="6sQ-de-uhT" id="sIO-ZY-dbS"/>
+                        <outlet property="lblEmployeeName" destination="f52-6h-B6U" id="wbU-8d-nUy"/>
+                        <outlet property="lblEmployeeSalary" destination="vhi-n7-H55" id="ftU-e9-3Mn"/>
+                        <outlet property="lblEmployeeVehicleMake" destination="yI4-HN-9x9" id="mvO-a8-Ywo"/>
+                        <outlet property="lblEmployeeVehiclePlate" destination="gcM-CM-JFf" id="zYK-Ud-whP"/>
+                        <outlet property="lblEmployeeVehicleType" destination="MHm-W3-jwG" id="KLY-be-ewO"/>
+                        <outlet property="txtEmployeeID" destination="ujY-8W-VdH" id="0vu-h0-xya"/>
+                        <outlet property="txtEmployeeName" destination="f52-6h-B6U" id="Xfp-0x-tSl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t3r-xE-ZAc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
