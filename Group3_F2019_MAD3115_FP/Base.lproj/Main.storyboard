@@ -113,7 +113,7 @@
         <!--UpdateEmployeeProfileViewController-->
         <scene sceneID="eXy-NH-Hf3">
             <objects>
-                <viewController storyboardIdentifier="UpdateProfileVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dcI-Cr-ucQ" userLabel="UpdateEmployeeProfileViewController" customClass="EditEmployeeProfileViewController" customModule="Group3_F2019_MAD3115_FP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UpdateProfileVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dcI-Cr-ucQ" userLabel="UpdateEmployeeProfileViewController" customClass="UpdateEmployeeProfileViewController" customModule="Group3_F2019_MAD3115_FP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vY7-pc-L6B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -171,6 +171,9 @@
                                 <rect key="frame" x="20" y="581" width="180" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="btnSave:" destination="dcI-Cr-ucQ" eventType="touchUpInside" id="reu-ic-na2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXl-kF-WpA">
                                 <rect key="frame" x="231" y="581" width="163" height="30"/>
@@ -178,6 +181,9 @@
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnCancel:" destination="dcI-Cr-ucQ" eventType="touchUpInside" id="4jA-Is-BO6"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter New Birthdate" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QKw-8U-rj9">
                                 <rect key="frame" x="20" y="328" width="374" height="40"/>
@@ -213,6 +219,14 @@
                         <viewLayoutGuide key="safeArea" id="RsJ-YE-88Y"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="uRt-BU-MU2"/>
+                    <connections>
+                        <outlet property="txtLatitude" destination="IiQ-yF-sGb" id="evk-3B-F6q"/>
+                        <outlet property="txtLongitude" destination="Ii9-HM-b54" id="LOg-r0-k2E"/>
+                        <outlet property="txtUBirthDate" destination="QKw-8U-rj9" id="ZQg-3y-5gP"/>
+                        <outlet property="txtUEmailID" destination="TJj-ia-8aN" id="ZVq-rk-dVn"/>
+                        <outlet property="txtUEmployeeID" destination="dX0-HQ-GX1" id="o5Z-hc-qAV"/>
+                        <outlet property="txtUName" destination="asf-xt-5D8" id="iAY-sb-MmP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zsl-ze-G02" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
