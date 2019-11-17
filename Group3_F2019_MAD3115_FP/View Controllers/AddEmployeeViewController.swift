@@ -250,29 +250,36 @@ class AddEmployeeViewController: UIViewController {
                     self.present(myAlert,animated: true, completion: nil);
                 }
                 readValues()
-                //switch end here
+                
                 }
            
             func readValues(){
-                
-                //first empty the list of register
-        //       internArray.removeAll()
-        //        fullTimeArray.removeAll()
-        //        cbptArray.removeAll()
-        //        fbptArray.removeAll()
-                
-                //this is our select query
+        
                 let queryString = "SELECT * FROM AddEmployee "
-                
-                //statement pointer
+        
                 var stmt:OpaquePointer?
-                
-                //preparing the query
                 if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
                     let errmsg = String(cString: sqlite3_errmsg(db)!)
                     print("error preparing insert: \(errmsg)")
                     return
                 }
+                
+                
+                while(sqlite3_step(stmt) == SQLITE_ROW){
+                          let id = sqlite3_column_int(stmt, 0)
+                          let name = String(cString: sqlite3_column_text(stmt, 2))
+                          let employeeid =  sqlite3_column_int(stmt, 1)
+                          let age = sqlite3_column_int(stmt, 3)
+                          let make = String(cString: sqlite3_column_text(stmt, 4))
+                          let  plate = String(cString: sqlite3_column_text(stmt, 5))
+                          let attribute = String(cString: sqlite3_column_text(stmt, 6))
+                          let stipend = sqlite3_column_int(stmt, 7)
+                          let schoolname = String(cString: sqlite3_column_text(stmt, 8))
+                          let salary = sqlite3_column_double(stmt, 9)
+                          let commissionpercentage = sqlite3_column_double(stmt, 10)
+                          let fixedsalary = sqlite3_column_double(stmt, 11)
+                          let hoursworked = sqlite3_column_int(stmt, 12)
+                          let rate = sqlite3_column_int(stmt, 13)
                 
                 
         
