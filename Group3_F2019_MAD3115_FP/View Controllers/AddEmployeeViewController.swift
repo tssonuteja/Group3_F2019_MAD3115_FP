@@ -7,9 +7,16 @@
 //
 
 import UIKit
+import SQLite3
 
 class AddEmployeeViewController: UIViewController {
     
+    var db : OpaquePointer?
+    
+    var internArray: [Intern] = [Intern]()
+    var fullTimeArray: [FullTimeEmployee] = [FullTimeEmployee]()
+    var cbptArray: [CommisionBasedPartTime] = [CommisionBasedPartTime]()
+    var fbptArray: [FixedBasePartTime] = [FixedBasePartTime]()
     
     @IBOutlet weak var txtFullName: UITextField!
     @IBOutlet weak var txtEmpID: UITextField!
