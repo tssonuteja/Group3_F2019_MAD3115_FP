@@ -14,6 +14,44 @@
                     <view key="view" contentMode="scaleToFill" id="KRW-Zx-3Ba">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="p6" translatesAutoresizingMaskIntoConstraints="NO" id="aLF-XU-6Iy">
+                                <rect key="frame" x="0.0" y="283" width="414" height="263"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="p1" translatesAutoresizingMaskIntoConstraints="NO" id="86F-Ve-6eU">
+                                <rect key="frame" x="0.0" y="103" width="414" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sai Teja - C0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otG-nh-vIl">
+                                <rect key="frame" x="20" y="669" width="374" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jeena Paul - C0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8LJ-2F-mhI">
+                                <rect key="frame" x="20" y="720" width="374" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rahul - C0764798" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xx5-Nd-O5z">
+                                <rect key="frame" x="20" y="773" width="374" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GROUP 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjZ-9C-sX1">
+                                <rect key="frame" x="20" y="598" width="374" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="CPS-fW-gPd"/>
                     </view>
@@ -21,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GYE-Ff-3VM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="819" y="17"/>
+            <point key="canvasLocation" x="818.84057971014499" y="16.741071428571427"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="mNR-KS-srG">
@@ -218,7 +256,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RsJ-YE-88Y"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="uRt-BU-MU2"/>
+                    <tabBarItem key="tabBarItem" title="Edit Employee" id="uRt-BU-MU2" userLabel="Edit Employee"/>
                     <connections>
                         <outlet property="txtLatitude" destination="IiQ-yF-sGb" id="evk-3B-F6q"/>
                         <outlet property="txtLongitude" destination="Ii9-HM-b54" id="LOg-r0-k2E"/>
@@ -362,8 +400,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="Mrd-s1-GVw" kind="relationship" relationship="viewControllers" id="xwG-oO-ZQ9"/>
-                        <segue destination="dcI-Cr-ucQ" kind="relationship" relationship="viewControllers" id="mCQ-t0-K6V"/>
                         <segue destination="Wik-kJ-nfv" kind="relationship" relationship="viewControllers" id="WNu-3D-KbM"/>
+                        <segue destination="dcI-Cr-ucQ" kind="relationship" relationship="viewControllers" id="mCQ-t0-K6V"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5CL-J3-fgd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -375,26 +413,26 @@
             <objects>
                 <viewController storyboardIdentifier="AddEmpVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wik-kJ-nfv" customClass="AddEmployeeViewController" customModule="Group3_F2019_MAD3115_FP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vgw-c6-K1g">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter FullName" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wg9-PA-IOk">
-                                <rect key="frame" x="20" y="15" width="374" height="34"/>
+                                <rect key="frame" x="20" y="59" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Employee Birthday" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ks-po-WWl">
-                                <rect key="frame" x="20" y="67" width="374" height="34"/>
+                                <rect key="frame" x="20" y="111" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Employee ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LJN-Jp-Akb">
-                                <rect key="frame" x="20" y="121" width="374" height="34"/>
+                                <rect key="frame" x="20" y="165" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Make" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zkw-Ru-95b">
-                                <rect key="frame" x="20" y="290" width="180" height="34"/>
+                                <rect key="frame" x="20" y="334" width="180" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="180" id="wSH-8d-Sid"/>
                                 </constraints>
@@ -402,19 +440,19 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Does Employee has a Vehicle?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ab-EW-kfh">
-                                <rect key="frame" x="20" y="179" width="237" height="31"/>
+                                <rect key="frame" x="20" y="223" width="237" height="31"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gf-6H-RO0">
-                                <rect key="frame" x="20" y="427" width="374" height="21"/>
+                                <rect key="frame" x="20" y="471" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Va2-sp-RK4">
-                                <rect key="frame" x="20" y="232" width="374" height="32"/>
+                                <rect key="frame" x="20" y="276" width="374" height="32"/>
                                 <segments>
                                     <segment title="Car"/>
                                     <segment title="Motorcycle"/>
@@ -424,17 +462,17 @@
                                 </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Plate" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l3E-pQ-AgS">
-                                <rect key="frame" x="214" y="290" width="180" height="34"/>
+                                <rect key="frame" x="214" y="334" width="180" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Car/Motorcycle Colour" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QdT-E6-Gc4">
-                                <rect key="frame" x="20" y="342" width="374" height="34"/>
+                                <rect key="frame" x="20" y="386" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tOi-Xv-wQD">
-                                <rect key="frame" x="265" y="179" width="129" height="32"/>
+                                <rect key="frame" x="265" y="223" width="129" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="129" id="72a-dn-Hsf"/>
                                 </constraints>
@@ -447,7 +485,7 @@
                                 </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2r5-gU-ZlS">
-                                <rect key="frame" x="20" y="467" width="374" height="32"/>
+                                <rect key="frame" x="20" y="511" width="374" height="32"/>
                                 <segments>
                                     <segment title="Full-Time"/>
                                     <segment title="Intern"/>
@@ -459,7 +497,7 @@
                                 </connections>
                             </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRl-af-d6f" userLabel="Inter View">
-                                <rect key="frame" x="12" y="522" width="390" height="209"/>
+                                <rect key="frame" x="12" y="566" width="390" height="170"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Intern Stipend" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pZJ-uN-RJu">
                                         <rect key="frame" x="8" y="30" width="374" height="34"/>
@@ -483,7 +521,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="moN-hm-1Xn" userLabel="Full Time VIew">
-                                <rect key="frame" x="20" y="522" width="366" height="209"/>
+                                <rect key="frame" x="20" y="566" width="366" height="170"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Full Time Commision %" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uN7-S4-E4B">
                                         <rect key="frame" x="-4" y="90" width="374" height="34"/>
@@ -507,7 +545,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ub8-ft-wQJ" userLabel="FixedBased - PartTime View">
-                                <rect key="frame" x="12" y="522" width="382" height="209"/>
+                                <rect key="frame" x="12" y="566" width="382" height="170"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fixed Based Salary" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="glW-cR-Lj0">
                                         <rect key="frame" x="3" y="8" width="376" height="34"/>
@@ -539,7 +577,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C8m-4K-TYF" userLabel="Commission Based - PartTIme VIew">
-                                <rect key="frame" x="12" y="506" width="382" height="225"/>
+                                <rect key="frame" x="12" y="550" width="382" height="186"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Commission Based Salary" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gLj-4J-xoP">
                                         <rect key="frame" x="3" y="25" width="376" height="34"/>
@@ -571,14 +609,14 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtT-du-akK">
-                                <rect key="frame" x="12" y="731" width="382" height="30"/>
+                                <rect key="frame" x="12" y="736" width="382" height="30"/>
                                 <state key="normal" title="Save Data"/>
                                 <connections>
                                     <action selector="btnsaveData:" destination="Wik-kJ-nfv" eventType="touchUpInside" id="tKg-NG-GrH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lS2-Nr-BOI">
-                                <rect key="frame" x="12" y="774" width="382" height="30"/>
+                                <rect key="frame" x="12" y="779" width="382" height="30"/>
                                 <state key="normal" title="Click Here for Employee Details"/>
                                 <connections>
                                     <action selector="btnViewEmployeeDetails:" destination="Wik-kJ-nfv" eventType="touchUpInside" id="tCy-Kx-GCM"/>
@@ -1000,10 +1038,11 @@
         <image name="p1" width="1141" height="512"/>
         <image name="p2" width="600" height="500"/>
         <image name="p5" width="981" height="385"/>
+        <image name="p6" width="560" height="350"/>
         <image name="phone" catalog="system" width="64" height="56"/>
         <image name="xmark.circle" catalog="system" width="64" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="pBk-tY-bSN"/>
+        <segue reference="WNu-3D-KbM"/>
     </inferredMetricsTieBreakers>
 </document>

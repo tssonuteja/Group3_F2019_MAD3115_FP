@@ -8,23 +8,22 @@
 
 import UIKit
 
-class SplashScreenViewController: UIViewController {
+class SpalshViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+override func viewDidLoad() {
+    super.viewDidLoad()
+    perform(#selector(self.gotoLoginscreen), with: nil, afterDelay: 2)
 
-        // Do any additional setup after loading the view.
-    }
-    
+    // Do any additional setup after loading the view.
+}
 
-    /*
-    // MARK: - Navigation
+override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+@objc func gotoLoginscreen()  {
+    performSegue(withIdentifier: "splashToLogin", sender: self)
+}
 
 }
