@@ -78,8 +78,20 @@ class AddEmployeeViewController: UIViewController {
     
     @IBOutlet weak var vehicleOption: UISegmentedControl!
     
-    
     @IBAction func vehicleAttribute(_ sender: Any) {
+        
+        switch vehicleOption.selectedSegmentIndex {
+        case 0:
+          txtVehicleMake.isEnabled = false
+            txtVehiclePlate.isEnabled = false
+            case 1:
+            txtVehiclePlate.isEnabled = true
+            txtVehicleMake.isEnabled = true
+            
+        default:
+            break
+        }
+        }
     }
     
     
