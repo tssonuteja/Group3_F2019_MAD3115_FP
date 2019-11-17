@@ -153,6 +153,27 @@ class AddEmployeeViewController: UIViewController {
                 break
             }
             }
+    
+    
+    @IBAction func btnsaveData(_ sender: Any) {
+        
+        let name = txtFullName.text
+          let employeeid = txtEmpID.text
+         // let age = employeeAge.text
+          let make = txtVehicleMake.text
+          let  plate = txtVehiclePlate.text
+          let attribute = txtVehicleColour.text
+          let stipend = txtStipend.text!
+          let schoolname = txtSchoolName.text
+          let salary = txtFullTimeSalary.text
+          let commissionpercentage = txtFullTimeCommissionPercentage.text!
+          let fixedsalary = txtFullTimeSalary.text!
+          let hoursworked = txtFixedBasedHoursWorked.text!
+          let rate = txtFixedBasedHourlyRate.text!
+        
+    }
+    
+    
         
         
     }
