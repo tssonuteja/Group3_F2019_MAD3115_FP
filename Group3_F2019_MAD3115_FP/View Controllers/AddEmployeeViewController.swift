@@ -177,29 +177,24 @@ class AddEmployeeViewController: UIViewController {
         
         
         let queryString = "INSERT INTO AddEmployee ( employeeid, name ,age ,make ,plate ,attribute ,stipend ,schoolname ,salary , commissionpercentage , hoursworked , fixedsalary , rate ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)"
-        //preparing the query
+       
         if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK{
             print("error bindind Query"); return;
             
         }
         
-        //binding the parameters
         if sqlite3_bind_int(stmt, 1, (employeeid! as NSString).intValue) != SQLITE_OK {
             print("error bind email")
             return;
         }
         
-        //binding the parameters
+        
         if sqlite3_bind_text(stmt, 2, name, -1, nil) != SQLITE_OK{
             let errmsg = String(cString: sqlite3_errmsg(db)!)
             print("failure binding name: \(errmsg)")
             return
         }
-      //  if sqlite3_bind_int(stmt, 3,(age! as NSString).intValue) != SQLITE_OK {
-          //  print("error bind email")
-            //return
-      //  }
-        
+      
         if sqlite3_bind_text(stmt, 4, make, -1, nil) != SQLITE_OK {
             print("error bind email")
             return
@@ -364,7 +359,7 @@ class AddEmployeeViewController: UIViewController {
     @IBAction func btnViewEmployeeDetails(_ sender: Any) {
         
         
-        performSegue(withIdentifier: "LDVC", sender: self)
+        performSegue(withIdentifier: "DisplayVC", sender: self)
          }
          
          
