@@ -155,7 +155,6 @@
                         <segue destination="Mrd-s1-GVw" kind="relationship" relationship="viewControllers" id="xwG-oO-ZQ9"/>
                         <segue destination="dcI-Cr-ucQ" kind="relationship" relationship="viewControllers" id="mCQ-t0-K6V"/>
                         <segue destination="Wik-kJ-nfv" kind="relationship" relationship="viewControllers" id="WNu-3D-KbM"/>
-                        <segue destination="KGb-Py-mvR" kind="relationship" relationship="viewControllers" id="nb4-J7-Vu0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5CL-J3-fgd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -374,6 +373,7 @@
                                 <state key="normal" title="Click Here for Employee Details"/>
                                 <connections>
                                     <action selector="btnViewEmployeeDetails:" destination="Wik-kJ-nfv" eventType="touchUpInside" id="tCy-Kx-GCM"/>
+                                    <segue destination="Fj2-Ws-ZMg" kind="show" identifier="DisplayVC" id="TuD-l2-TpO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -465,21 +465,21 @@
             </objects>
             <point key="canvasLocation" x="3595.652173913044" y="-389.0625"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="jaM-PG-Vo9">
+        <!--Display Employee View Controller-->
+        <scene sceneID="eVB-E0-ol3">
             <objects>
-                <viewController storyboardIdentifier="DisplayVC" id="KGb-Py-mvR" customClass="DisplayEmployeeViewController" customModule="Group3_F2019_MAD3115_FP" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uOv-gU-oN0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController storyboardIdentifier="DisplayVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fj2-Ws-ZMg" customClass="DisplayEmployeeViewController" customModule="Group3_F2019_MAD3115_FP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zbi-e8-bV7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="5HR-Q4-XH4"/>
+                        <viewLayoutGuide key="safeArea" id="tem-vo-BzU"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="0E5-dE-xbR"/>
+                    <navigationItem key="navigationItem" id="YFu-PO-fEC"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SCR-EU-IfM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t3r-xE-ZAc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3596" y="309"/>
+            <point key="canvasLocation" x="4572" y="-389"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="pDZ-kJ-W89">

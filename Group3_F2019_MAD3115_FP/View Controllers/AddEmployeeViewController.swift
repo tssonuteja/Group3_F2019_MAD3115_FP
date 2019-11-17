@@ -360,7 +360,7 @@ class AddEmployeeViewController: UIViewController {
         
         
         performSegue(withIdentifier: "DisplayVC", sender: self)
-         }
+    }
          
          
         
@@ -368,9 +368,9 @@ class AddEmployeeViewController: UIViewController {
          
          
          override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-             if let displayVCD = segue.destination as? DispalyEmployeeViewController{
+             if let displayVCD = segue.destination as? DisplayEmployeeViewController{
                  
-                 displayVCD.cbptArray = cbptArray
+                displayVCD.cbptArray = cbptArray
                  displayVCD.fbptArray = fbptArray
                  displayVCD.internArray = internArray
                  displayVCD.fullTimeArray = fullTimeArray

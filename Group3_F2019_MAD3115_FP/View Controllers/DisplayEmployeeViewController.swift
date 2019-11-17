@@ -9,6 +9,11 @@
 import UIKit
 
 class DisplayEmployeeViewController: UIViewController {
+    
+    var internArray: [Intern] = [Intern]()
+    var fullTimeArray: [FullTimeEmployee] = [FullTimeEmployee]()
+    var cbptArray: [CommisionBasedPartTime] = [CommisionBasedPartTime]()
+    var fbptArray: [FixedBasePartTime] = [FixedBasePartTime]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
