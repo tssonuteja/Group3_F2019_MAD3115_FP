@@ -27,11 +27,29 @@ class AddEmployeeViewController: UIViewController {
     @IBOutlet weak var txtFixedBasedHourlyRate: UITextField!
     @IBOutlet weak var txtFixedBasedHoursWorked: UITextField!
     
+    @IBOutlet weak var txtCommissionBasedSalary: UITextField!
+
+    @IBOutlet weak var txtCommissionBasedHourlyRate: UITextField!
+    
+    @IBOutlet weak var txtCommissionBasedHourlyWork: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //test
 
     }
+    
+    
+    @IBOutlet weak var vehicleOption: UISegmentedControl!
+    
+    
+    @IBAction func vehicleAttribute(_ sender: Any) {
+    }
+    
+    
+    
+    
     
 
 }

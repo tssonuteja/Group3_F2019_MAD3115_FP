@@ -231,6 +231,10 @@
                                     <segment title="" image="checkmark.circle" catalog="system"/>
                                     <segment title="" image="xmark.circle" catalog="system"/>
                                 </segments>
+                                <connections>
+                                    <action selector="vehicleAttribute:" destination="Wik-kJ-nfv" eventType="valueChanged" id="b0j-nB-5cz"/>
+                                    <action selector="vehicleYesOrNo:" destination="Wik-kJ-nfv" eventType="valueChanged" id="ANz-li-XVI"/>
+                                </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2r5-gU-ZlS">
                                 <rect key="frame" x="20" y="511" width="374" height="32"/>
@@ -423,6 +427,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="AddEmployee" id="p7c-Ps-3PO" userLabel="AddEmployee"/>
                     <connections>
+                        <outlet property="txtCommissionBasedHourlyRate" destination="Rjn-5w-SYM" id="9bj-GW-LtB"/>
+                        <outlet property="txtCommissionBasedHourlyWork" destination="rnu-0T-eGM" id="8hs-9P-56b"/>
+                        <outlet property="txtCommissionBasedSalary" destination="gLj-4J-xoP" id="68S-oO-M4z"/>
                         <outlet property="txtEmpID" destination="LJN-Jp-Akb" id="BSL-eZ-atM"/>
                         <outlet property="txtFixedBasedHourlyRate" destination="m6Z-YB-uPL" id="sRd-Rg-ERI"/>
                         <outlet property="txtFixedBasedHoursWorked" destination="Vly-Om-tC2" id="PzY-Nr-Zcd"/>
@@ -435,6 +442,7 @@
                         <outlet property="txtVehicleColour" destination="QdT-E6-Gc4" id="u4T-n6-MSd"/>
                         <outlet property="txtVehicleMake" destination="Zkw-Ru-95b" id="0kM-T8-Y4F"/>
                         <outlet property="txtVehiclePlate" destination="l3E-pQ-AgS" id="VJj-zQ-e2f"/>
+                        <outlet property="vehicleOption" destination="tOi-Xv-wQD" id="bFC-Wd-eAE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4qF-y4-1Rm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
