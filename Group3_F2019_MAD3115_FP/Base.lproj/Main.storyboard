@@ -457,6 +457,7 @@
                         <outlet property="txtVehicleColour" destination="QdT-E6-Gc4" id="u4T-n6-MSd"/>
                         <outlet property="txtVehicleMake" destination="Zkw-Ru-95b" id="0kM-T8-Y4F"/>
                         <outlet property="txtVehiclePlate" destination="l3E-pQ-AgS" id="VJj-zQ-e2f"/>
+                        <outlet property="vehicleOption" destination="tOi-Xv-wQD" id="bHP-m2-tmb"/>
                         <outlet property="vehicleSeg" destination="Va2-sp-RK4" id="DmH-Db-c2k"/>
                     </connections>
                 </viewController>
