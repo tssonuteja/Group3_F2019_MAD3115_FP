@@ -30,7 +30,6 @@
 		E981B3D4237F7213006434DF /* FullTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3D3237F7213006434DF /* FullTime.swift */; };
 		E981B3D6237F722C006434DF /* CommissionBasedPartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3D5237F722C006434DF /* CommissionBasedPartTime.swift */; };
 		E981B3D8237F7240006434DF /* FixedBasedPartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3D7237F7240006434DF /* FixedBasedPartTime.swift */; };
-		E9E34C8B2381EF0600177134 /* output-onlinepngtools.png in Resources */ = {isa = PBXBuildFile; fileRef = E9E34C8A2381EF0600177134 /* output-onlinepngtools.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +58,6 @@
 		E981B3D3237F7213006434DF /* FullTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullTime.swift; sourceTree = "<group>"; };
 		E981B3D5237F722C006434DF /* CommissionBasedPartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommissionBasedPartTime.swift; sourceTree = "<group>"; };
 		E981B3D7237F7240006434DF /* FixedBasedPartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedBasedPartTime.swift; sourceTree = "<group>"; };
-		E9E34C8A2381EF0600177134 /* output-onlinepngtools.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "output-onlinepngtools.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +90,6 @@
 		E981B39E237F6D64006434DF /* Group3_F2019_MAD3115_FP */ = {
 			isa = PBXGroup;
 			children = (
-				E9E34C8A2381EF0600177134 /* output-onlinepngtools.png */,
 				E981B3A5237F6D64006434DF /* Main.storyboard */,
 				E981B3C4237F7123006434DF /* Swift Files */,
 				E981B3C3237F70F3006434DF /* View Controllers */,
@@ -196,7 +193,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E981B3AC237F6D65006434DF /* LaunchScreen.storyboard in Resources */,
-				E9E34C8B2381EF0600177134 /* output-onlinepngtools.png in Resources */,
 				E981B3A9237F6D65006434DF /* Assets.xcassets in Resources */,
 				E981B3A7237F6D64006434DF /* Main.storyboard in Resources */,
 			);
