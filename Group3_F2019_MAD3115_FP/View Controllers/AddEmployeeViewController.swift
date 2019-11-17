@@ -53,6 +53,27 @@ class AddEmployeeViewController: UIViewController {
            if sqlite3_exec(db, "DROP TABLE IF EXISTS AddEmployee", nil, nil, nil) != SQLITE_OK{
                print("deletrd")
            }
+        
+        if sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS AddEmployee (id INTEGER PRIMARY KEY AUTOINCREMENT, employeeid INTEGER, name TEXT, age INTEGER, make TEXT, plate TEXT, attribute TEXT, stipend INTEGER, schoolname TEXT, salary INTEGER, commissionpercentage FLOAT, hoursworked INTEGER, fixedsalary FLOAT, rate INTEGER )", nil,nil,nil) != SQLITE_OK{
+                   print("error createing table ")
+                   return
+               }
+               
+               print("good")
+               txtVehicleMake.isEnabled = false
+               txtVehiclePlate.isEnabled = false
+               internView.isHidden = false
+              fullTimeView.isHidden = true
+              fbptView.isHidden = true
+               readValues()
+               }
+
+           override func didReceiveMemoryWarning() {
+               super.didReceiveMemoryWarning()
+               
+           }
+        
+        
     
     
     @IBOutlet weak var vehicleOption: UISegmentedControl!
