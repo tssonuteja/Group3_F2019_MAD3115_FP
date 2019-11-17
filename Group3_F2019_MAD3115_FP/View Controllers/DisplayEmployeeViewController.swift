@@ -71,12 +71,17 @@ class DisplayEmployeeViewController: UIViewController {
                        lblEmployeeSalary.isHidden = true
                     
                     
-                    if internArray[j].vehicle == nil{
-                                       lblEmployeeVehicleMake.text = "employee has no vehicle"
-                                   }else{
-                                       lblEmployeeVehicleMake.text = "make is \(internArray[j].vehicle?.make! ?? "AUDI")"
-                                       lblEmployeeVehiclePlate.text = "plate is \(internArray[j].vehicle?.plate! ?? "C76ON1")"
-                                   }}
+                    if internArray[j].vehicle == nil
+                    {
+                        
+                        lblEmployeeVehicleMake.text = "employee has no vehicle"
+                                   }
+                    else{
+                lblEmployeeVehicleMake.text = "make is \(internArray[j].vehicle?.make! ?? "AUDI")"
+                lblEmployeeVehiclePlate.text = "plate is \(internArray[j].vehicle?.plate! ?? "C76ON1")"
+                                   }
+                    
+                   }
                                else{
                                    print("not found") }
             
@@ -88,6 +93,22 @@ class DisplayEmployeeViewController: UIViewController {
                 lblEmployeeRate.text = String(fullTimeArray[j].bonus!)
                 lblEmployeeHourlyRate.text = String(fullTimeArray[j].calcEarning())
                 lblEmployeeSalary.isHidden = true
+                
+                if fullTimeArray[j].vehicle == nil{
+                                lblEmployeeVehicleMake.text = "employee has no vehicle"
+                            }
+                else
+                {
+            lblEmployeeVehicleMake.text = "make is \(fullTimeArray[j].vehicle?.make! ?? "BMW")"
+             lblEmployeeVehiclePlate.text = "plate is \(fullTimeArray[j].vehicle?.plate! ?? "C74ON12")"
+                            }
+                        }else{
+                            print("not found") }
+                        
+                    }
+                }
+                
+                
         
     }
     
