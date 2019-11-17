@@ -73,8 +73,6 @@ class AddEmployeeViewController: UIViewController {
                
            }
         
-        
-    
     
     @IBOutlet weak var vehicleOption: UISegmentedControl!
     
@@ -92,6 +90,27 @@ class AddEmployeeViewController: UIViewController {
             break
         }
         }
+    
+    
+    @IBOutlet weak var vehicleSeg: UISegmentedControl!
+    
+    
+    @IBAction func vehicleType(_ sender: Any) {
+        
+        switch vehicleSeg.selectedSegmentIndex {
+        case 0:
+            txtVehicleColour.placeholder = "enter car colour"
+            
+        case 1:
+           txtVehicleColour.placeholder = "enter bike weight"
+           
+        default:
+            break;
+        }
+        }
+        
+    }
+    
     }
     
     
