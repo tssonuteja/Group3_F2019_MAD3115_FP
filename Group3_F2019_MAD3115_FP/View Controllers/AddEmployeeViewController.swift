@@ -25,6 +25,11 @@ class AddEmployeeViewController: UIViewController {
     @IBOutlet weak var txtVehicleColour: UITextField!
     
     
+    @IBOutlet weak var txtDate: UITextField!
+    var pickerView = UIPickerView()
+    var datePicker = UIDatePicker()
+    let toolBar = UIToolbar()
+    
     
     @IBOutlet weak var txtStipend: UITextField!
     @IBOutlet weak var txtSchoolName: UITextField!

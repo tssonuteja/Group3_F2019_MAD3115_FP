@@ -699,6 +699,7 @@
                         <outlet property="txtCommissionBasedHourlyRate" destination="Rjn-5w-SYM" id="9bj-GW-LtB"/>
                         <outlet property="txtCommissionBasedHourlyWork" destination="rnu-0T-eGM" id="8hs-9P-56b"/>
                         <outlet property="txtCommissionBasedSalary" destination="gLj-4J-xoP" id="68S-oO-M4z"/>
+                        <outlet property="txtDate" destination="3ks-po-WWl" id="2Ru-sU-Q5Q"/>
                         <outlet property="txtEmpID" destination="LJN-Jp-Akb" id="BSL-eZ-atM"/>
                         <outlet property="txtFixedBasedHourlyRate" destination="m6Z-YB-uPL" id="sRd-Rg-ERI"/>
                         <outlet property="txtFixedBasedHoursWorked" destination="Vly-Om-tC2" id="PzY-Nr-Zcd"/>
