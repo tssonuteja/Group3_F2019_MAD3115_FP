@@ -30,6 +30,7 @@
 		E981B3D4237F7213006434DF /* FullTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3D3237F7213006434DF /* FullTime.swift */; };
 		E981B3D6237F722C006434DF /* CommissionBasedPartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3D5237F722C006434DF /* CommissionBasedPartTime.swift */; };
 		E981B3D8237F7240006434DF /* FixedBasedPartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3D7237F7240006434DF /* FixedBasedPartTime.swift */; };
+		E9E34CAF238243C500177134 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E34CAE238243C500177134 /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		E981B3D3237F7213006434DF /* FullTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullTime.swift; sourceTree = "<group>"; };
 		E981B3D5237F722C006434DF /* CommissionBasedPartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommissionBasedPartTime.swift; sourceTree = "<group>"; };
 		E981B3D7237F7240006434DF /* FixedBasedPartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedBasedPartTime.swift; sourceTree = "<group>"; };
+		E9E34CAE238243C500177134 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				E981B3D3237F7213006434DF /* FullTime.swift */,
 				E981B3D5237F722C006434DF /* CommissionBasedPartTime.swift */,
 				E981B3D7237F7240006434DF /* FixedBasedPartTime.swift */,
+				E9E34CAE238243C500177134 /* Date.swift */,
 			);
 			path = "Swift Files";
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				E981B3A0237F6D64006434DF /* AppDelegate.swift in Sources */,
 				E981B3BE237F705B006434DF /* AddEmployeeViewController.swift in Sources */,
 				E981B3CE237F71E8006434DF /* MotorCycle.swift in Sources */,
+				E9E34CAF238243C500177134 /* Date.swift in Sources */,
 				E981B3B6237F6F96006434DF /* LoginViewController.swift in Sources */,
 				E981B3D4237F7213006434DF /* FullTime.swift in Sources */,
 				E981B3C8237F71BA006434DF /* IPrintable.swift in Sources */,
