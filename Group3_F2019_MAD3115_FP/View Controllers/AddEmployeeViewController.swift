@@ -13,8 +13,6 @@ class AddEmployeeViewController: UIViewController {
     
     var db : OpaquePointer?
     
-    //Test
-    
     var internArray: [Intern] = [Intern]()
     var fullTimeArray: [FullTimeEmployee] = [FullTimeEmployee]()
     var cbptArray: [CommisionBasedPartTime] = [CommisionBasedPartTime]()
