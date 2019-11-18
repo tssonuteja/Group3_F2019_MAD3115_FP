@@ -12,7 +12,7 @@ class SplashScreenViewController: UIViewController {
 
 override func viewDidLoad() {
     super.viewDidLoad()
-    perform(#selector(self.gotoLoginscreen), with: nil, afterDelay: 2)
+    perform(#selector(self.gotoLoginscreen), with: nil, afterDelay: 3)
 
     // Do any additional setup after loading the view.
 }

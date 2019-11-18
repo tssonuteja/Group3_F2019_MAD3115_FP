@@ -30,15 +30,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sai Teja - C0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otG-nh-vIl">
-                                <rect key="frame" x="20" y="669" width="374" height="43"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sai Teja - C0765775" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otG-nh-vIl">
+                                <rect key="frame" x="20" y="669" width="374" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jeena Paul - C0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8LJ-2F-mhI">
-                                <rect key="frame" x="20" y="720" width="374" height="51"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jeena Paul - C0769922" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8LJ-2F-mhI">
+                                <rect key="frame" x="20" y="720" width="374" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -501,52 +501,36 @@
                                     <action selector="employeementTypeSegment:" destination="Wik-kJ-nfv" eventType="valueChanged" id="ynx-DD-S2x"/>
                                 </connections>
                             </segmentedControl>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRl-af-d6f" userLabel="Inter View">
-                                <rect key="frame" x="12" y="560" width="390" height="171"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C8m-4K-TYF" userLabel="Commission Based - PartTIme VIew">
+                                <rect key="frame" x="12" y="544" width="382" height="187"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Intern Stipend" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pZJ-uN-RJu">
-                                        <rect key="frame" x="8" y="30" width="374" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Commission Based Salary" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gLj-4J-xoP">
+                                        <rect key="frame" x="3" y="25" width="376" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Intern School Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hpR-EB-IvQ">
-                                        <rect key="frame" x="8" y="89" width="374" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Commission Based - Hourly Rate" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rjn-5w-SYM">
+                                        <rect key="frame" x="3" y="77" width="376" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Commission Based - Hours Worked" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rnu-0T-eGM">
+                                        <rect key="frame" x="3" y="132" width="376" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="hpR-EB-IvQ" firstAttribute="top" secondItem="pZJ-uN-RJu" secondAttribute="bottom" constant="25" id="3eF-LN-BoR"/>
-                                    <constraint firstItem="pZJ-uN-RJu" firstAttribute="top" secondItem="VRl-af-d6f" secondAttribute="top" constant="30" id="4Xi-Xk-uAK"/>
-                                    <constraint firstItem="pZJ-uN-RJu" firstAttribute="leading" secondItem="hpR-EB-IvQ" secondAttribute="leading" id="JW2-9W-Z2h"/>
-                                    <constraint firstItem="pZJ-uN-RJu" firstAttribute="leading" secondItem="VRl-af-d6f" secondAttribute="leadingMargin" id="VG9-n4-yPE"/>
-                                    <constraint firstItem="pZJ-uN-RJu" firstAttribute="trailing" secondItem="hpR-EB-IvQ" secondAttribute="trailing" id="nQB-eT-fWt"/>
-                                    <constraint firstItem="pZJ-uN-RJu" firstAttribute="trailing" secondItem="VRl-af-d6f" secondAttribute="trailingMargin" id="o3o-dk-Uhx"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="moN-hm-1Xn" userLabel="Full Time VIew">
-                                <rect key="frame" x="20" y="560" width="366" height="171"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Full Time Commision %" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uN7-S4-E4B">
-                                        <rect key="frame" x="-4" y="90" width="374" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Full Time Salary" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wdd-ae-fyk">
-                                        <rect key="frame" x="-4" y="31" width="374" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstItem="wdd-ae-fyk" firstAttribute="top" secondItem="moN-hm-1Xn" secondAttribute="top" constant="31" id="1rl-S2-Dp4"/>
-                                    <constraint firstItem="wdd-ae-fyk" firstAttribute="trailing" secondItem="uN7-S4-E4B" secondAttribute="trailing" id="BXn-ey-30w"/>
-                                    <constraint firstItem="wdd-ae-fyk" firstAttribute="centerX" secondItem="moN-hm-1Xn" secondAttribute="centerX" id="EaV-E7-ciZ"/>
-                                    <constraint firstItem="wdd-ae-fyk" firstAttribute="leading" secondItem="uN7-S4-E4B" secondAttribute="leading" id="OBb-bJ-aJe"/>
-                                    <constraint firstItem="uN7-S4-E4B" firstAttribute="top" secondItem="wdd-ae-fyk" secondAttribute="bottom" constant="25" id="YLG-dz-Qo7"/>
-                                    <constraint firstItem="wdd-ae-fyk" firstAttribute="leading" secondItem="moN-hm-1Xn" secondAttribute="leading" constant="-4" id="r9S-n3-7UP"/>
+                                    <constraint firstItem="gLj-4J-xoP" firstAttribute="leading" secondItem="Rjn-5w-SYM" secondAttribute="leading" id="4Oc-Vd-oVd"/>
+                                    <constraint firstItem="gLj-4J-xoP" firstAttribute="trailing" secondItem="Rjn-5w-SYM" secondAttribute="trailing" id="4eB-sx-eOX"/>
+                                    <constraint firstItem="Rjn-5w-SYM" firstAttribute="leading" secondItem="rnu-0T-eGM" secondAttribute="leading" id="5QJ-rZ-OSX"/>
+                                    <constraint firstItem="gLj-4J-xoP" firstAttribute="centerX" secondItem="C8m-4K-TYF" secondAttribute="centerX" id="6eq-WL-Slh"/>
+                                    <constraint firstItem="gLj-4J-xoP" firstAttribute="top" secondItem="C8m-4K-TYF" secondAttribute="top" constant="25" id="B0f-qf-uUN"/>
+                                    <constraint firstItem="Rjn-5w-SYM" firstAttribute="top" secondItem="gLj-4J-xoP" secondAttribute="bottom" constant="18" id="KbV-tH-WfI"/>
+                                    <constraint firstItem="gLj-4J-xoP" firstAttribute="leading" secondItem="C8m-4K-TYF" secondAttribute="leading" constant="3" id="Nn8-DO-Mh1"/>
+                                    <constraint firstItem="rnu-0T-eGM" firstAttribute="top" secondItem="Rjn-5w-SYM" secondAttribute="bottom" constant="21" id="f3j-Iq-YIq"/>
+                                    <constraint firstItem="Rjn-5w-SYM" firstAttribute="trailing" secondItem="rnu-0T-eGM" secondAttribute="trailing" id="yoO-m3-2EG"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ub8-ft-wQJ" userLabel="FixedBased - PartTime View">
@@ -581,36 +565,52 @@
                                     <constraint firstItem="m6Z-YB-uPL" firstAttribute="leading" secondItem="Vly-Om-tC2" secondAttribute="leading" id="njT-Tm-mUB"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C8m-4K-TYF" userLabel="Commission Based - PartTIme VIew">
-                                <rect key="frame" x="12" y="544" width="382" height="187"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRl-af-d6f" userLabel="Inter View">
+                                <rect key="frame" x="12" y="560" width="390" height="171"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Commission Based Salary" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gLj-4J-xoP">
-                                        <rect key="frame" x="3" y="25" width="376" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Intern Stipend" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pZJ-uN-RJu">
+                                        <rect key="frame" x="8" y="30" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Commission Based - Hourly Rate" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rjn-5w-SYM">
-                                        <rect key="frame" x="3" y="77" width="376" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Commission Based - Hours Worked" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rnu-0T-eGM">
-                                        <rect key="frame" x="3" y="132" width="376" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Intern School Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hpR-EB-IvQ">
+                                        <rect key="frame" x="8" y="89" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="gLj-4J-xoP" firstAttribute="leading" secondItem="Rjn-5w-SYM" secondAttribute="leading" id="4Oc-Vd-oVd"/>
-                                    <constraint firstItem="gLj-4J-xoP" firstAttribute="trailing" secondItem="Rjn-5w-SYM" secondAttribute="trailing" id="4eB-sx-eOX"/>
-                                    <constraint firstItem="Rjn-5w-SYM" firstAttribute="leading" secondItem="rnu-0T-eGM" secondAttribute="leading" id="5QJ-rZ-OSX"/>
-                                    <constraint firstItem="gLj-4J-xoP" firstAttribute="centerX" secondItem="C8m-4K-TYF" secondAttribute="centerX" id="6eq-WL-Slh"/>
-                                    <constraint firstItem="gLj-4J-xoP" firstAttribute="top" secondItem="C8m-4K-TYF" secondAttribute="top" constant="25" id="B0f-qf-uUN"/>
-                                    <constraint firstItem="Rjn-5w-SYM" firstAttribute="top" secondItem="gLj-4J-xoP" secondAttribute="bottom" constant="18" id="KbV-tH-WfI"/>
-                                    <constraint firstItem="gLj-4J-xoP" firstAttribute="leading" secondItem="C8m-4K-TYF" secondAttribute="leading" constant="3" id="Nn8-DO-Mh1"/>
-                                    <constraint firstItem="rnu-0T-eGM" firstAttribute="top" secondItem="Rjn-5w-SYM" secondAttribute="bottom" constant="21" id="f3j-Iq-YIq"/>
-                                    <constraint firstItem="Rjn-5w-SYM" firstAttribute="trailing" secondItem="rnu-0T-eGM" secondAttribute="trailing" id="yoO-m3-2EG"/>
+                                    <constraint firstItem="hpR-EB-IvQ" firstAttribute="top" secondItem="pZJ-uN-RJu" secondAttribute="bottom" constant="25" id="3eF-LN-BoR"/>
+                                    <constraint firstItem="pZJ-uN-RJu" firstAttribute="top" secondItem="VRl-af-d6f" secondAttribute="top" constant="30" id="4Xi-Xk-uAK"/>
+                                    <constraint firstItem="pZJ-uN-RJu" firstAttribute="leading" secondItem="hpR-EB-IvQ" secondAttribute="leading" id="JW2-9W-Z2h"/>
+                                    <constraint firstItem="pZJ-uN-RJu" firstAttribute="leading" secondItem="VRl-af-d6f" secondAttribute="leadingMargin" id="VG9-n4-yPE"/>
+                                    <constraint firstItem="pZJ-uN-RJu" firstAttribute="trailing" secondItem="hpR-EB-IvQ" secondAttribute="trailing" id="nQB-eT-fWt"/>
+                                    <constraint firstItem="pZJ-uN-RJu" firstAttribute="trailing" secondItem="VRl-af-d6f" secondAttribute="trailingMargin" id="o3o-dk-Uhx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="moN-hm-1Xn" userLabel="Full Time VIew">
+                                <rect key="frame" x="20" y="560" width="366" height="171"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Full Time Commision %" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uN7-S4-E4B">
+                                        <rect key="frame" x="0.0" y="88" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Full Time Salary" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wdd-ae-fyk">
+                                        <rect key="frame" x="0.0" y="31" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="wdd-ae-fyk" firstAttribute="top" secondItem="moN-hm-1Xn" secondAttribute="top" constant="31" id="1rl-S2-Dp4"/>
+                                    <constraint firstItem="wdd-ae-fyk" firstAttribute="trailing" secondItem="uN7-S4-E4B" secondAttribute="trailing" id="BXn-ey-30w"/>
+                                    <constraint firstItem="wdd-ae-fyk" firstAttribute="centerX" secondItem="moN-hm-1Xn" secondAttribute="centerX" id="EaV-E7-ciZ"/>
+                                    <constraint firstItem="wdd-ae-fyk" firstAttribute="leading" secondItem="uN7-S4-E4B" secondAttribute="leading" id="OBb-bJ-aJe"/>
+                                    <constraint firstItem="uN7-S4-E4B" firstAttribute="top" secondItem="wdd-ae-fyk" secondAttribute="bottom" constant="25" id="YLG-dz-Qo7"/>
+                                    <constraint firstItem="wdd-ae-fyk" firstAttribute="leading" secondItem="moN-hm-1Xn" secondAttribute="leading" constant="-4" id="r9S-n3-7UP"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CtT-du-akK">
