@@ -69,7 +69,7 @@
             <objects>
                 <viewController storyboardIdentifier="LoginVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LJy-VY-ZDI" customClass="LoginViewController" customModule="Group3_F2019_MAD3115_FP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FiD-jm-cJN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nTU-Rx-Or4">
@@ -77,7 +77,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rsC-tX-38O">
-                                <rect key="frame" x="68" y="162" width="278" height="40"/>
+                                <rect key="frame" x="68" y="74" width="278" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="9xR-fE-jsT"/>
                                 </constraints>
@@ -85,7 +85,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xbF-B1-eYV">
-                                <rect key="frame" x="68" y="239" width="278" height="40"/>
+                                <rect key="frame" x="68" y="151" width="278" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Xmj-ml-hpP"/>
                                 </constraints>
@@ -968,7 +968,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jq5-tz-W9T">
-                                <rect key="frame" x="96" y="817" width="222" height="45"/>
+                                <rect key="frame" x="96" y="736" width="222" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Click here to Login!">
@@ -978,13 +978,6 @@
                                     <action selector="btnGoToLoginScreen:" destination="rYv-je-1wX" eventType="touchUpInside" id="lCR-WQ-QNN"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpM-Lt-46x">
-                                <rect key="frame" x="163" y="607" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -1013,24 +1006,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Xc-it-yAT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1731.8840579710147" y="811.60714285714278"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="eN4-vM-v6y">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="51A-rD-YMv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M3m-yo-weZ" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Q88-tJ-xIO">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="0UO-y2-FMA" kind="relationship" relationship="rootViewController" id="x37-1m-VEJ"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="-414" y="17"/>
         </scene>
     </scenes>
     <resources>
