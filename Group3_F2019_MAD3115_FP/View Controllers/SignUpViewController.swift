@@ -32,7 +32,7 @@ class SignUpViewController: UIViewController {
                let fileUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("SignUpDatabase.sqlite")
                
                if sqlite3_open(fileUrl.path, &db) != SQLITE_OK{
-                   self.title = "hello mohit"
+                   self.title = "hello world"
                    print("error opening meassage")
                    return
                }
@@ -128,7 +128,7 @@ class SignUpViewController: UIViewController {
             }
             
             override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-                // Get the new view controller using
+               
                 if let displayVC = segue.destination as? LoginViewController
                 {
                     displayVC.SignUpArray = SignUpArray
@@ -139,16 +139,14 @@ class SignUpViewController: UIViewController {
             
             func readValues(){
                
-                //first empty the list of register
+                
                 SignUpArray.removeAll()
                 
-                //this is our select query
+               
                 let queryString = "SELECT * FROM Signup"
-                
-                //statement pointer
+          
                 var stmt:OpaquePointer?
                 
-                //preparing the query
                 if sqlite3_prepare(db, queryString, -1, &stmt, nil) != SQLITE_OK
                 {
                     let errmsg = String(cString: sqlite3_errmsg(db)!)
@@ -156,7 +154,6 @@ class SignUpViewController: UIViewController {
                     return
                 }
                 
-                //traversing through all the records
                 while(sqlite3_step(stmt) == SQLITE_ROW){
                     let id = sqlite3_column_int(stmt, 0)
                     let name = String(cString: sqlite3_column_text(stmt, 1))
