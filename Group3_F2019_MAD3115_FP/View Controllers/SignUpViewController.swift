@@ -124,7 +124,7 @@ class SignUpViewController: UIViewController {
     @IBAction func btnGoToLoginScreen(_ sender: Any)
     {
         
-            performSegue(withIdentifier: "LoginVC", sender: self)
+            performSegue(withIdentifier: "DVC", sender: self)
             }
             
             override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

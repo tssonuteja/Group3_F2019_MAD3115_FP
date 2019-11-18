@@ -98,7 +98,7 @@
                                 <state key="normal" title="Log In"/>
                                 <connections>
                                     <action selector="btnLogin:" destination="LJy-VY-ZDI" eventType="touchUpInside" id="3m7-pc-1xJ"/>
-                                    <segue destination="FSA-2c-Ya5" kind="show" id="2Hx-gg-Few"/>
+                                    <segue destination="FSA-2c-Ya5" kind="show" identifier="LoginVC" id="2Hx-gg-Few"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an Account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RX7-8u-KUU">
@@ -978,6 +978,7 @@
                                 </state>
                                 <connections>
                                     <action selector="btnGoToLoginScreen:" destination="rYv-je-1wX" eventType="touchUpInside" id="lCR-WQ-QNN"/>
+                                    <segue destination="LJy-VY-ZDI" kind="show" identifier="DVC" id="pKt-81-IrW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1025,5 +1026,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="WNu-3D-KbM"/>
+        <segue reference="pKt-81-IrW"/>
     </inferredMetricsTieBreakers>
 </document>
