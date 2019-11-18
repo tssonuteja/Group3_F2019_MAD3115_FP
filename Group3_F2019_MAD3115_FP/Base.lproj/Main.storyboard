@@ -1072,7 +1072,6 @@
         <image name="xmark.circle" catalog="system" width="64" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="TuD-l2-TpO"/>
         <segue reference="pBk-tY-bSN"/>
         <segue reference="cQu-5t-xw3"/>
     </inferredMetricsTieBreakers>
