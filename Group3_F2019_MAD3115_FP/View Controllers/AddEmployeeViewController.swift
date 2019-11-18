@@ -49,6 +49,10 @@ class AddEmployeeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupToolBar()
+        setupPicker()
+        setupTextFields()
+        
     let fileUrl = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false).appendingPathComponent("AddEmployee.sqlite")
            if sqlite3_open(fileUrl.path, &db) != SQLITE_OK{
                self.title = "hello Jeena"
@@ -77,6 +81,53 @@ class AddEmployeeViewController: UIViewController {
                super.didReceiveMemoryWarning()
                
            }
+    
+    
+    func setupPicker(){
+        pickerView.delegate = self as? UIPickerViewDelegate
+    txtDate.inputView = pickerView
+    txtDate.inputAccessoryView = toolBar
+
+    }
+    func setupToolBar(){
+        datePicker.datePickerMode = .date
+        datePicker.addTarget(self, action: #selector(datePickerValueChanged(_:)), for: .valueChanged)
+        toolBar.barStyle = UIBarStyle.default
+        toolBar.isTranslucent = true
+        toolBar.tintColor = UIColor.black
+        toolBar.sizeToFit()
+        let doneButton = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(doneBtnAction))
+        let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
+        let cancelButton =   UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelBtnAction))
+        toolBar.setItems([cancelButton, space,doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+        toolBar.sizeToFit()
+    }
+    @objc func datePickerValueChanged(_ date:UIDatePicker){
+        txtDate.text = datePicker.date.dateformatter()
+    }
+    
+    func setupTextFields(){
+        txtDate.inputAccessoryView = toolBar
+        txtDate.inputView = datePicker
+    }
+    
+    @IBAction func saveBtnTapped(_ sender: Any) {
+               let date = txtDate.text ?? ""
+              
+               
+               }
+               
+            
+           @objc func doneBtnAction(){
+               view.endEditing(true)
+           }
+           
+           
+           @objc func cancelBtnAction(){
+               view.endEditing(true)
+           }
+           
         
     
     @IBOutlet weak var vehicleOption: UISegmentedControl!
