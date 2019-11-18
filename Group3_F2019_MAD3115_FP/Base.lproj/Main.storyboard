@@ -98,7 +98,7 @@
                                 <state key="normal" title="Log In"/>
                                 <connections>
                                     <action selector="btnLogin:" destination="LJy-VY-ZDI" eventType="touchUpInside" id="3m7-pc-1xJ"/>
-                                    <segue destination="FSA-2c-Ya5" kind="show" identifier="LoginVC" id="2Hx-gg-Few"/>
+                                    <segue destination="FSA-2c-Ya5" kind="show" identifier="HomeVC" id="2Hx-gg-Few"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an Account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RX7-8u-KUU">
@@ -194,17 +194,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Latitude" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IiQ-yF-sGb">
-                                <rect key="frame" x="20" y="469" width="180" height="40"/>
+                                <rect key="frame" x="20" y="479" width="180" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="HcF-YE-gQG"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Longitude" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ii9-HM-b54">
-                                <rect key="frame" x="231" y="469" width="163" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="MpZ-jV-Uee"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -228,7 +220,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Update Employee Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBT-su-1Aq">
-                                <rect key="frame" x="20" y="421" width="374" height="40"/>
+                                <rect key="frame" x="20" y="409" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="EeW-Uw-TdK"/>
                                 </constraints>
@@ -236,6 +228,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Longitude" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ii9-HM-b54">
+                                <rect key="frame" x="231" y="479" width="163" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="MpZ-jV-Uee"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -1026,6 +1026,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="WNu-3D-KbM"/>
-        <segue reference="pKt-81-IrW"/>
+        <segue reference="cQu-5t-xw3"/>
     </inferredMetricsTieBreakers>
 </document>
