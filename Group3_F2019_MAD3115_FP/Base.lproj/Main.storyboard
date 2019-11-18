@@ -460,7 +460,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Employee Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gf-6H-RO0">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Employee Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4gf-6H-RO0">
                                 <rect key="frame" x="20" y="465" width="374" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -489,7 +489,7 @@
                                     <action selector="vehicleYesOrNo:" destination="Wik-kJ-nfv" eventType="valueChanged" id="ANz-li-XVI"/>
                                 </connections>
                             </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2r5-gU-ZlS">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2r5-gU-ZlS">
                                 <rect key="frame" x="20" y="505" width="374" height="32"/>
                                 <segments>
                                     <segment title="Full-Time"/>
@@ -501,7 +501,7 @@
                                     <action selector="employeementTypeSegment:" destination="Wik-kJ-nfv" eventType="valueChanged" id="ynx-DD-S2x"/>
                                 </connections>
                             </segmentedControl>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VRl-af-d6f" userLabel="Inter View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRl-af-d6f" userLabel="Inter View">
                                 <rect key="frame" x="12" y="560" width="390" height="171"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Intern Stipend" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pZJ-uN-RJu">
@@ -525,7 +525,7 @@
                                     <constraint firstItem="pZJ-uN-RJu" firstAttribute="trailing" secondItem="VRl-af-d6f" secondAttribute="trailingMargin" id="o3o-dk-Uhx"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="moN-hm-1Xn" userLabel="Full Time VIew">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="moN-hm-1Xn" userLabel="Full Time VIew">
                                 <rect key="frame" x="20" y="560" width="366" height="171"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Full Time Commision %" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uN7-S4-E4B">
@@ -549,7 +549,7 @@
                                     <constraint firstItem="wdd-ae-fyk" firstAttribute="leading" secondItem="moN-hm-1Xn" secondAttribute="leading" constant="-4" id="r9S-n3-7UP"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ub8-ft-wQJ" userLabel="FixedBased - PartTime View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ub8-ft-wQJ" userLabel="FixedBased - PartTime View">
                                 <rect key="frame" x="12" y="560" width="382" height="171"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fixed Based Salary" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="glW-cR-Lj0">
@@ -581,7 +581,7 @@
                                     <constraint firstItem="m6Z-YB-uPL" firstAttribute="leading" secondItem="Vly-Om-tC2" secondAttribute="leading" id="njT-Tm-mUB"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C8m-4K-TYF" userLabel="Commission Based - PartTIme VIew">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C8m-4K-TYF" userLabel="Commission Based - PartTIme VIew">
                                 <rect key="frame" x="12" y="544" width="382" height="187"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Commission Based Salary" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gLj-4J-xoP">
@@ -638,16 +638,18 @@
                                     <action selector="vehicleType:" destination="Wik-kJ-nfv" eventType="valueChanged" id="1QH-es-DIB"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Latitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oS8-6C-QAA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Latitude" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oS8-6C-QAA">
                                 <rect key="frame" x="32" y="405" width="136" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="YG4-OC-6D1"/>
+                                    <constraint firstAttribute="height" constant="40" id="fQf-ec-NBB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Longitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OuB-pS-EFM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Enter Longitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OuB-pS-EFM">
                                 <rect key="frame" x="243" y="405" width="130" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -662,6 +664,8 @@
                             <constraint firstItem="2r5-gU-ZlS" firstAttribute="leading" secondItem="moN-hm-1Xn" secondAttribute="leading" id="49g-0s-c5g"/>
                             <constraint firstItem="moN-hm-1Xn" firstAttribute="centerX" secondItem="Ub8-ft-wQJ" secondAttribute="centerX" id="4Nz-2W-vvT"/>
                             <constraint firstItem="C8m-4K-TYF" firstAttribute="bottom" secondItem="moN-hm-1Xn" secondAttribute="bottom" id="546-Pk-7Ok"/>
+                            <constraint firstItem="C8m-4K-TYF" firstAttribute="top" secondItem="Vgw-c6-K1g" secondAttribute="top" constant="544" id="56b-S5-qrN"/>
+                            <constraint firstItem="oS8-6C-QAA" firstAttribute="firstBaseline" secondItem="OuB-pS-EFM" secondAttribute="firstBaseline" id="847-oV-YAr"/>
                             <constraint firstItem="VRl-af-d6f" firstAttribute="bottom" secondItem="Ub8-ft-wQJ" secondAttribute="bottom" id="8Qe-Bj-EvY"/>
                             <constraint firstItem="2r5-gU-ZlS" firstAttribute="trailing" secondItem="C8m-4K-TYF" secondAttribute="trailing" id="8Tw-Pq-Jyx"/>
                             <constraint firstItem="PMc-mj-Bzu" firstAttribute="leading" secondItem="V9h-vY-NgG" secondAttribute="leading" constant="85" id="9La-qQ-3j7"/>
@@ -669,6 +673,7 @@
                             <constraint firstItem="LJN-Jp-Akb" firstAttribute="leading" secondItem="5ab-EW-kfh" secondAttribute="leading" id="9o8-wB-EM2"/>
                             <constraint firstItem="QdT-E6-Gc4" firstAttribute="trailing" secondItem="4gf-6H-RO0" secondAttribute="trailing" id="BYc-Cp-d5L"/>
                             <constraint firstItem="V9h-vY-NgG" firstAttribute="trailing" secondItem="moN-hm-1Xn" secondAttribute="trailing" constant="28" id="DVv-PK-NdQ"/>
+                            <constraint firstItem="OuB-pS-EFM" firstAttribute="leading" secondItem="oS8-6C-QAA" secondAttribute="trailing" constant="75" id="G0c-ut-3dC"/>
                             <constraint firstItem="V9h-vY-NgG" firstAttribute="bottom" secondItem="lS2-Nr-BOI" secondAttribute="bottom" constant="4" id="IY7-t3-cD4"/>
                             <constraint firstItem="Zkw-Ru-95b" firstAttribute="top" secondItem="Va2-sp-RK4" secondAttribute="bottom" constant="27" id="IoC-ex-nPF"/>
                             <constraint firstItem="CtT-du-akK" firstAttribute="trailing" secondItem="lS2-Nr-BOI" secondAttribute="trailing" id="IuA-eE-bXi"/>
@@ -687,6 +692,7 @@
                             <constraint firstItem="2r5-gU-ZlS" firstAttribute="centerX" secondItem="VRl-af-d6f" secondAttribute="centerX" id="YQ9-ey-hMQ"/>
                             <constraint firstItem="5ab-EW-kfh" firstAttribute="top" secondItem="tOi-Xv-wQD" secondAttribute="top" id="ZaI-bM-HNh"/>
                             <constraint firstItem="C8m-4K-TYF" firstAttribute="leading" secondItem="Ub8-ft-wQJ" secondAttribute="leading" id="aT2-3h-Flj"/>
+                            <constraint firstItem="oS8-6C-QAA" firstAttribute="leading" secondItem="V9h-vY-NgG" secondAttribute="leading" constant="32" id="bFf-tE-FEl"/>
                             <constraint firstItem="CtT-du-akK" firstAttribute="top" secondItem="Ub8-ft-wQJ" secondAttribute="bottom" id="bim-n7-IR9"/>
                             <constraint firstItem="VRl-af-d6f" firstAttribute="top" secondItem="Ub8-ft-wQJ" secondAttribute="top" id="d5R-SI-gVB"/>
                             <constraint firstItem="Va2-sp-RK4" firstAttribute="top" secondItem="5ab-EW-kfh" secondAttribute="bottom" constant="22" id="e6l-Om-bZg"/>
@@ -711,6 +717,7 @@
                             <constraint firstItem="CtT-du-akK" firstAttribute="leading" secondItem="lS2-Nr-BOI" secondAttribute="leading" id="vvm-BF-9AL"/>
                             <constraint firstItem="Ub8-ft-wQJ" firstAttribute="leading" secondItem="CtT-du-akK" secondAttribute="leading" id="w0F-zy-FVg"/>
                             <constraint firstItem="5ab-EW-kfh" firstAttribute="leading" secondItem="Va2-sp-RK4" secondAttribute="leading" id="y6z-9b-Vtf"/>
+                            <constraint firstItem="4gf-6H-RO0" firstAttribute="top" secondItem="oS8-6C-QAA" secondAttribute="bottom" constant="20" id="ycT-CF-CXX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="V9h-vY-NgG"/>
                     </view>
@@ -721,6 +728,8 @@
                         <outlet property="employeementType" destination="2r5-gU-ZlS" id="bq8-uX-PAZ"/>
                         <outlet property="fullTimeView" destination="moN-hm-1Xn" id="Abh-js-hGo"/>
                         <outlet property="internView" destination="VRl-af-d6f" id="dcq-vg-FV4"/>
+                        <outlet property="lblLat" destination="oS8-6C-QAA" id="HY0-0D-1Qd"/>
+                        <outlet property="lblLng" destination="OuB-pS-EFM" id="LS8-Qf-mvs"/>
                         <outlet property="txtCommissionBasedHourlyRate" destination="Rjn-5w-SYM" id="9bj-GW-LtB"/>
                         <outlet property="txtCommissionBasedHourlyWork" destination="rnu-0T-eGM" id="8hs-9P-56b"/>
                         <outlet property="txtCommissionBasedSalary" destination="gLj-4J-xoP" id="68S-oO-M4z"/>

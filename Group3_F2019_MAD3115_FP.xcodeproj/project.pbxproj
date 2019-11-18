@@ -31,6 +31,7 @@
 		E981B3D6237F722C006434DF /* CommissionBasedPartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3D5237F722C006434DF /* CommissionBasedPartTime.swift */; };
 		E981B3D8237F7240006434DF /* FixedBasedPartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E981B3D7237F7240006434DF /* FixedBasedPartTime.swift */; };
 		E9E34CAF238243C500177134 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E34CAE238243C500177134 /* Date.swift */; };
+		E9E34CB1238252C800177134 /* Vibration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E34CB0238252C800177134 /* Vibration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		E981B3D5237F722C006434DF /* CommissionBasedPartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommissionBasedPartTime.swift; sourceTree = "<group>"; };
 		E981B3D7237F7240006434DF /* FixedBasedPartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedBasedPartTime.swift; sourceTree = "<group>"; };
 		E9E34CAE238243C500177134 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		E9E34CB0238252C800177134 /* Vibration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				E981B3D5237F722C006434DF /* CommissionBasedPartTime.swift */,
 				E981B3D7237F7240006434DF /* FixedBasedPartTime.swift */,
 				E9E34CAE238243C500177134 /* Date.swift */,
+				E9E34CB0238252C800177134 /* Vibration.swift */,
 			);
 			path = "Swift Files";
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			files = (
 				E981B3B8237F6FE0006434DF /* SignUpViewController.swift in Sources */,
 				E981B3D2237F7200006434DF /* Intern.swift in Sources */,
+				E9E34CB1238252C800177134 /* Vibration.swift in Sources */,
 				E981B3D0237F71F5006434DF /* PartTime.swift in Sources */,
 				E981B3C6237F7165006434DF /* Employee.swift in Sources */,
 				E981B3D8237F7240006434DF /* FixedBasedPartTime.swift in Sources */,
